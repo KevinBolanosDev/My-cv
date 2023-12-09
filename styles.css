@@ -1,0 +1,655 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: rgb(11, 11, 11);
+}
+
+/*===================== VARIABLES CSS ===================*/
+:root {
+  --header-height: 3rem;
+
+  /*============= COLORS ==============*/
+  /* Change favorite color */
+  /* Purple 250 - Green 142 - Blue 230 - Pink 340 */
+
+  --hue-color-230: 230;
+  /* HSL color mode 230 */
+  --first-color: hsl(var(--hue-color-230), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color-230), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color-230), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color-230), 92%, 85%);
+  --first-title-color: hsl(var(--hue-color-230), 8%, 15%);
+  --first-text-color-light: hsl(var(--hue-color-230), 8%, 45%);
+  --first-input-color: hsl(var(--hue-color-230), 70%, 96%);
+  --first-body-color: hsl(var(--hue-color-230), 30%, 35%);
+
+  --hue-color-221: 221;
+  /* HSL color mode 221 */
+  --second-color: hsl(var(--hue-color-221), 80%, 40%);
+  --second-color-second: hsl(var(--hue-color-221), 69%, 61%);
+  --second-color-alt: hsl(var(--hue-color-221), 56%, 56%);
+  --second-color-lighter: hsl(var(--hue-color-221), 92%, 85%);
+  --second-title-color: hsl(var(--hue-color-221), 8%, 15%);
+  --second-text-color-light: hsl(var(--hue-color-221), 8%, 45%);
+  --second-input-color: hsl(var(--hue-color-221), 70%, 96%);
+  --second-body-color: hsl(var(--hue-color-221), 32%, 21%);
+
+  --container-color: #fff;
+
+  /*============= FONT AND TYPOGRAPHY ==============*/
+  --body-font: "Poppins", sans-serif;
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*================= FONT WEIGHT =================*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*=================== MARGENES BUTTOM ===============*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*====================== Z INDEX ======================*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* HOME */
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  color: hsl(0, 0%, 100%);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+
+.image-header {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  /* margin-top: -50%; */
+  /* z-index: 1; */
+}
+
+.image-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mylogo {
+  position: relative;
+  font-size: 2.2rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 800;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 1.5rem;
+  color: var(--first-color-alt);
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 25px;
+}
+
+/* Cambia de color las etiquetas "a" */
+.navbar a:hover {
+  color: var(--first-color);
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  background-color: var(--first-body-color);
+}
+
+.content {
+  margin-left: 50px;
+}
+
+.content h3 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: rgb(235, 235, 255);
+  margin-bottom: 40px;
+}
+
+.content h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: white;
+}
+
+span {
+  color: rgb(0, 0, 0);
+}
+
+.content p {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 550px;
+  height: 150px;
+  font-size: 1.6rem;
+  color: var(--first-title-color);
+}
+
+/* IMAGE PROFILE */
+
+/* Nota: z-index es para que la imagen se ponga encima o del texto */
+.image-container {
+  position: absolute;
+  top: 18%;
+  left: 56%;
+  right: 150px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.image-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-background {
+  position: absolute;
+  /* top: 7%; */
+  left: 50%;
+  width: 673px;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.image-background img {
+  position: absolute;
+  object-fit: cover;
+  width: 750px;
+  height: 800px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ABOUT-ME AND EDUCATION SECTION*/
+
+.about-me__education {
+  position: relative;
+  justify-content: space-between;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--second-body-color);
+}
+
+/* Background decoration */
+
+.image-about-section-top {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+  top: 0;
+}
+
+.image-about-section-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-about-section-bottom {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+  bottom: 0;
+}
+
+.image-about-section-bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ABOUT ME SECTION */
+
+.content__about-me p {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+/* title and paragraph */
+.content__about-me {
+  width: 50%;
+  padding: 30px;
+}
+
+.content__about-me h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* EDUCATION SECTION */
+
+.content__education {
+  width: 50%;
+  margin-top: -5%;
+  display: flex;
+  justify-content: center;
+}
+
+.content__education div {
+  width: 100%;
+}
+
+.content__education ul {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.content__education ul div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6px;
+}
+
+.content__education li {
+  font-size: 1.3rem;
+  font-weight: 600;
+  list-style: none;
+}
+
+.content__education h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.content__education h3 {
+  font-size: 1.5rem;
+  text-align: end;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content__education p {
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+/* SKILLS AND WORK EXPERIENCE */
+
+.skills__other-courses {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-color: var(--first-body-color);
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Background decoration */
+.image-background-left {
+  position: absolute;
+  height: 100%;
+  width: 80px;
+  z-index: 1;
+}
+
+.image-background-left img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.image-background-rigth {
+  position: absolute;
+  height: 100%;
+  width: 80px;
+  right: 0;
+  z-index: 1;
+}
+
+.image-background-rigth img {
+  position: absolute;
+  object-fit: cover;
+  /* right: 0; */
+  width: 100%;
+  height: 100%;
+}
+
+/* SKILLS SECTION*/
+
+.content__skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  padding-left: 80px;
+  left: 0;
+  margin-top: -30px;
+}
+
+.title__skill {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.container__skills {
+  row-gap: 0;
+  width: 450px;
+}
+
+.skills__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+/* ICON */
+.skills__icon,
+.skills__arrow {
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+
+.skills__icon {
+  margin-right: 0.75rem;
+}
+
+.skills__arrow {
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+/* TITLES */
+.title__skills {
+  font-size: 1.7rem;
+}
+
+.subtitle__skills {
+  font-size: 1rem;
+  color: var(--first-text-color-light);
+  justify-content: start;
+}
+
+/* EXPERIENCE PERCENTAGE */
+.skills__list {
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills__titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skills__name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.skills__bar,
+.skills__percentage {
+  height: 10px;
+  border-radius: 0.25rem;
+}
+
+.skills__bar {
+  background-color: var(--first-color-lighter);
+}
+
+.skills__percentage {
+  display: block;
+  background-color: var(--first-color);
+}
+
+/* BAR EXPERIENCE */
+.skills__html {
+  width: 90%;
+}
+.skills__css {
+  width: 80%;
+}
+.skills__js {
+  width: 70%;
+}
+.skills__react {
+  width: 90%;
+}
+.skills__node {
+  width: 80%;
+}
+.skills__mongodb {
+  width: 70%;
+}
+
+/* DISGUISE SKILLS */
+.skills__open .skills__list {
+  height: max-content;
+  margin-bottom: 2.5rem;
+}
+
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__open .skills__arrow {
+  transform: rotate(-180deg);
+}
+
+/* OTHER COURSES SECTION */
+
+.content__other-courses {
+    position: absolute;
+    border: solid;
+    width: 50%;
+    right: 0;
+    height: 100%;
+    padding-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__other-courses h1 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.container__other-courses h3 {
+    font-size: 1.3rem;
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+.container__other-courses li {
+    list-style: none;
+    padding-bottom: 12px;
+}
+
+.container__other-courses li > p {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.container__other-courses li div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 2px;
+}
+
+.container__other-courses a {
+    font-weight: 800;
+}
+
+
+
+
+
+/* RESPONSIVE QUERIES */
+
+@media screen and (max-width: 1140px) {
+  .mylogo {
+    font-size: 2rem;
+  }
+
+  .navbar a {
+    font-size: 1.3rem;
+  }
+
+  .content h3 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  .content h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .content p {
+    width: 400px;
+    height: 150px;
+    font-size: 18px;
+    margin-top: -20px;
+  }
+
+  .image-container {
+    right: 130px;
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .mylogo {
+    font-size: 1.8rem;
+  }
+
+  .navbar a {
+    font-size: 1.2rem;
+    margin-left: 20px;
+  }
+
+  .content h3 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .content h1 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .content p {
+    width: 350px;
+    height: 150px;
+    font-size: 16px;
+    margin-top: -25px;
+  }
+
+  .image-container {
+    top: 30%;
+    right: 110px;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mylogo {
+    font-size: 1.5rem;
+    margin-left: 20px;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+    margin-left: 15px;
+  }
+
+  .content h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .content h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .content p {
+    width: 300px;
+    height: 150px;
+    font-size: 14px;
+    margin-top: -30px;
+  }
+
+  .image-container {
+    top: 32%;
+    right: 100px;
+    width: 250px;
+    height: 250px;
+  }
+}

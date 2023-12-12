@@ -8,29 +8,38 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+    />
+
     <title>Mi Portafolio</title>
   </head>
   <body>
     <!-- HEADER NAV -->
     <header class="header">
-      <a href="#home" class="mylogo"><span>Portafolio</span></a>
+      <a href="#home" class="mylogo"><span>Mi Resume</span></a>
       <nav class="navbar">
-        <a href="#home">Inicio</a>
         <a href="#about-me">Acerca De Mi</a>
-        <a href="#services">Proyectos</a>
-        <a href="#contact">Contactos</a>
+        <a href="#about-me">Educación</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#skills">Cursos</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
       </nav>
     </header>
+    <!-- HEADER NAV END -->
 
     <!-- HOME SECTION -->
     <section id="home" class="home">
       <div class="image-header">
-        <img src="background-decoration.png" alt="background-decoration" />
+        <img src="/img/background-decoration.png" alt="background-decoration" />
       </div>
+
       <div class="content">
-        <h3>Bienvenidos a mi Portafolio</h3>
-        <h1>Soy <span>Kevin Bolaños</span></h1>
-        <h3>Desarrollador Full-Stack MERN</h3>
+        <h3 id="bounceInDown">Bienvenidos a mi Resume</h3>
+          <h1 id="bounceInLeft">Soy <span>Kevin Bolaños</span></h1>
+          <h3><span>Desarrollador Full-Stack MERN</span></h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
           repudiandae neque exercitationem aperiam alias nam Lorem ipsum, dolor
@@ -38,26 +47,27 @@
         </p>
       </div>
       <div class="image-container">
-        <img src="Img-me.jpeg" alt="photo-profile" />
+        <img src="/img/Img-me.jpeg" alt="photo-profile" />
       </div>
       <div class="image-background">
-        <img src="background-decoration.png" alt="background-home" />
+        <img src="/img/background-decoration.png" alt="background-home" />
       </div>
     </section>
+    <!-- HOME SECTION END -->
 
     <!-- ABOUT ME AND EDUCATION SECTION -->
     <section id="about-me" class="about-me__education">
       <div class="image-about-section-top">
-        <img src="background-decoration.png" alt="background-decoration" />
+        <img src="/img/background-decoration.png" alt="background-decoration" />
       </div>
       <div class="image-about-section-bottom">
-        <img src="background-decoration.png" alt="background-decoration" />
+        <img src="/img/background-decoration.png" alt="background-decoration" />
       </div>
 
       <!-- ABOUT ME SECTION -->
       <article class="content__about-me">
         <div>
-          <h1>Acerca De Mi</h1>
+          <h1 class="flipInX">Acerca De Mi</h1>
           <p>
             Un entusiasta desarrollador web en proceso de formación constante,
             especializado en la creación y de desarrollo Full Stack de sitios y
@@ -82,7 +92,7 @@
       <!-- EDUCATION SECTION -->
       <article class="content__education">
         <div>
-          <h1>Educación</h1>
+          <h1 class="flipInX">Educación</h1>
           <h3>Conocé mi formación académica</h3>
           <ul>
             <li>Bootcamp talento digital - Habilidades socioemocionales</li>
@@ -96,6 +106,7 @@
             <div>
               <p>Bootcamp ada school</p>
               <p>Marzo 2023 - noviembre 2023</p>
+              <a href="https://learn.ada-school.org/certifications/65451dc4831c9788c54e7f3e">Certificado</a>
             </div>
           </ul>
           <ul>
@@ -111,18 +122,18 @@
     <!-- ABOUT ME AND EDUCATION SECTION END -->
 
     <!-- SKILLS AND OTHER COURSES -->
-    <section class="skills__other-courses">
+    <section id="skills" class="skills__other-courses">
       <div class="image-background-left">
-        <img src="background-decoration.png" alt="background-decoration" />
+        <img src="/img/background-decoration.png" alt="background-decoration" />
       </div>
-      <div class="image-background-rigth">
-        <img src="background-decoration.png" alt="background-decoration" />
+      <div class="image-background-right">
+        <img src="/img/background-decoration.png" alt="background-decoration" />
       </div>
 
       <!-- SKILLS SECTION -->
       <section class="content__skills" id="skills">
-        <h2 class="title__skill">Habilidades</h2>
-        <span class="section__subtitle">Nivel Técnico</span>
+        <h2 id="lightSpeedInLeft" class="title__skill">Habilidades</h2>
+        <span class="subtitle__skills">Nivel Técnico</span>
 
         <!-- CONTAINER SKILLS -->
         <section class="container__skills">
@@ -146,7 +157,7 @@
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">HTML</h3>
-                  <span class="skills__number">90%</span>
+                  <span class="skills__number">85%</span>
                 </div>
                 <div class="skills__bar">
                   <span class="skills__percentage skills__html"></span>
@@ -157,7 +168,7 @@
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">CSS</h3>
-                  <span class="skills__number">80%</span>
+                  <span class="skills__number">55%</span>
                 </div>
                 <div class="skills__bar">
                   <span class="skills__percentage skills__css"></span>
@@ -168,7 +179,7 @@
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">Javascript</h3>
-                  <span class="skills__number">70%</span>
+                  <span class="skills__number">30%</span>
                 </div>
                 <div class="skills__bar">
                   <span class="skills__percentage skills__js"></span>
@@ -179,7 +190,7 @@
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">React</h3>
-                  <span class="skills__number">90%</span>
+                  <span class="skills__number">35%</span>
                 </div>
                 <div class="skills__bar">
                   <span class="skills__percentage skills__react"></span>
@@ -207,7 +218,7 @@
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">Node JS</h3>
-                  <span class="skills__number">80%</span>
+                  <span class="skills__number">45%</span>
                 </div>
                 <div class="skills__bar">
                   <span class="skills__percentage skills__node"></span>
@@ -218,7 +229,7 @@
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">Mongo DB</h3>
-                  <span class="skills__number">70%</span>
+                  <span class="skills__number">50%</span>
                 </div>
                 <div class="skills__bar">
                   <span class="skills__percentage skills__mongodb"></span>
@@ -235,59 +246,84 @@
       <section class="content__other-courses">
         <article class="container__other-courses">
           <div>
-            <h1>Cursos adicionales</h1>
-            <h3>Cursos de corta duración y en proceso actualmente</h3>
+            <h1 id="lightSpeedInRight">Cursos adicionales</h1>
             <ul>
               <li>
-                <p>Certificado profesiona de Desarrollador front-end de Meta</p>
-                <div>
-                  <p>Noviembre 2023 - Actualidad</p>
+                <p>Certificado profesional de Desarrollador front-end de Meta</p>
+                <div class="position-courses">
                   <p>Coursera - Meta</p>
+                  <p>Noviembre 2023 - Actualidad</p>
                 </div>
-                <a href="#">Certificado</a>
+                <div class="shakeX">
+                  <i class="uil uil-file-bookmark-alt"></i>
+                  <a href="#">Certificado</a>
+                </div>
+              </li>
+              <li>
+                <p>Control de versiones (Curso 3)</p>
+                <div class="position-courses">
+                  <p>Coursera - Meta</p>
+                  <p>Diciembre - 2023</p>
+                </div>
+                <div class="shakeX">
+                  <i class="uil uil-file-bookmark-alt"></i>
+                  <a href="https://coursera.org/share/28aebd6ee27f673c2dff82fe107cffe1">Certificado</a>
+                </div>
               </li>
               <li>
                 <p>Introducción al desarrollo de front-end (Curso 1)</p>
-                <div>
-                  <p>Noviembre - 2023</p>
+                <div class="position-courses">
                   <p>Coursera - Meta</p>
+                  <p>Noviembre - 2023</p>
                 </div>
-                <a href="#">Certificado</a>
+                <div class="shakeX">
+                  <i class="uil uil-file-bookmark-alt"></i>
+                  <a href="https://coursera.org/share/cdc35b9b295df9c7ee8ad1a5156ba950">Certificado</a>
+                </div>
               </li>
               <li>
                 <p>Fundamentos de la ciberseguridad</p>
-                <div>
-                  <p>Octubre - 2023</p>
+                <div class="position-courses">
                   <p>Coursera - Google certificates</p>
+                  <p>Octubre - 2023</p>
                 </div>
-                <a href="#">Certificado</a>
+                <div class="shakeX">
+                  <i class="uil uil-file-bookmark-alt"></i>    
+                  <a href="https://coursera.org/share/502eb966559616bcd0a5710cd5468eed">Certificado</a>
+                </div>
               </li>
               <li>
                 <p>Fundamentos del desarrollo web: Full Stack o Front-end</p>
-                <div>
-                  <p>Agosto - 2023</p>
+                <div class="position-courses">
                   <p>LinkdeIn</p>
+                  <p>Agosto - 2023</p>
                 </div>
-                <a href="#">Certificado</a>
+                <div class="shakeX">
+                  <i class="uil uil-file-bookmark-alt"></i>
+                  <a href="https://www.linkedin.com/learning/certificates/fdf1e5b4898afa32a4d8de7632cad3c82625595294b762e10ff6fa1c74a96aee">Certificado</a>
+                </div>
               </li>
               <li>
-                <p>
-                  Introducción a las habilidades profesionales en análisis de
-                  datos
-                </p>
-                <div>
-                  <p>Julio - 2023</p>
+                <p>Introducción a las habilidades profesionales en análisis de datos</p>
+                <div class="position-courses">
                   <p>LinkedIn</p>
+                  <p>Julio - 2023</p>
                 </div>
-                <a href="#">Certificado</a>
+                <div class="shakeX">
+                  <i class="uil uil-file-bookmark-alt"></i>  
+                  <a href="https://www.linkedin.com/learning/certificates/9ce8f551515b987ce8f89fdba7c9d5a2160e1d80477e8480c7685b3d686dac58">Certificado</a>
+                </div>
               </li>
               <li>
                 <p>Protege tu Negocio: Ciberseguridad en el Teletrabajo</p>
-                <div>
-                  <p>Julio - 2023</p>
+                <div class="position-courses">
                   <p>Google</p>
+                  <p>Julio - 2023</p>
                 </div>
-                <a href="#">Certificado</a>
+                <div class="shakeX">
+                  <i class="uil uil-file-bookmark-alt"></i>
+                  <a href="https://skillshop.exceedlms.com/student/award/2sYGFaZuxcZBNpN9EHZ1rTYz">Certificado</a>
+                </div>
               </li>
             </ul>
           </div>
@@ -296,6 +332,130 @@
       <!-- CONTENT OTHER COURSES END -->
     </section>
     <!-- SKILLS AND OTHER COURSES END -->
+
+    <!-- PROJECTS EXPERIENCE  -->
+    <section id="projects" class="projects__experience">
+      <div class="image-projects-top">
+        <img src="/img/background-decoration.png" alt="background-decoration" />
+      </div>
+      <div class="image-projects-bottom">
+        <img src="/img/background-decoration.png" alt="background-decoration" />
+      </div>
+      <div class="title-projects">
+      </div>
+      
+      <section class="content__projects">
+        
+        <!-- first article -->
+        <article>
+          <div class="container__projects">
+              <h1 id="fadeInTopLeft">Proyectos</h1>
+            <h3>Proyectos que he realizado en el bootcamp</h3>
+            <ul>
+              <li>
+                <h3>Calculadora con HTML, CSS y Javascript</h3>
+                <div>
+                  <h3>Noviembre - 2023</h3>
+                  <h3>Proyecto personal</h3>
+                </div>
+                <p>Desarrollar una calculadora usando HTML, CSS y Javascript, desarrolle una calculadora con la funcionalidad simple para sumar, restar, multiplicar y dividir implementando la lógica de javascript.</p>
+              </li>
+              <li>
+                <h3>Aplicación Front End To do list con React</h3>
+                <div>
+                  <h3>Octubre - 2023</h3>
+                  <h3>Bootcamp Ada School</h3>
+                </div>
+                <p>Desarrollé la interfaz de una aplicación de una lista de tareas con el framework React creando rutas para agregar las tareas con su descripción, listar, editar, cambiar estado de la tarea a completada y eliminarla, lo desarrolle en diferentes componentes para la optimización de la aplicación, y utilicé la biblioteca Chakra UI para la interfaz de usuarios.</p>
+              </li>
+              <li>
+                <h3>Hoja de vida con HTML y CSS</h3>
+                <div>
+                  <h3>Abril - 2023</h3>
+                  <h3>Bootcamp Ada School</h3>
+                </div>
+                <p>DDesarrollé un CV básico, utilizando HTML y CSS, interactúe con el front end, diseñando la estructura básica que compone una página web y la creación de estilos con CSS.</p>
+              </li>
+            </ul>
+          </div>
+          </article>
+        </section>
+          
+          <!-- SECOND ARTICLE -->
+          <article class="content__projects-second">
+            <div class="container__projects-second">
+              <ul>
+                <li>
+                  <h3>Aplicación Notes con Bootstrap</h3>
+                  <div>
+                    <h3>Octubre - 2023</h3>
+                    <h3>Bootcamp Ada School</h3>
+                  </div>
+                  <p>Desarrollé un servidor con Node, cree un modelo de datos para MongoDB, conecte el servidor a la base, diseñe diferentes rutas con el método CRUD para agregar, editar, eliminar las notas y para el front-end use handlebars un motor de plantillas de HTML.</p>
+                </li>
+                <li>
+                  <h3>Crear servidor en Node y Express</h3>
+                  <div>
+                    <h3>Agosto - 2023</h3>
+                    <h3>Bootcamp Ada School</h3>
+                  </div>
+                  <p>Desarrollé servidores con Node y Express, conocimiento en la implementación de bibliotecas con Node como; jsonwebtoken, nodemon, cors, cookie-parser, bcryptjs, moongose, morgan, zod.</p>
+                </li>
+                <li>
+                  <h3>Lista de tareas en consola con Node</h3>
+                  <div>
+                    <h3>Julio - 2023</h3>
+                    <h3>Bootcamp Ada School</h3>
+                  </div>
+                  <p>Desarrollé una lista de tareas, utilizando node, un proyecto pequeño en el backend creando una interfaz de consola para tener un menú interactivo y usar las funcionalidades básicas de agregar, listar, modificar, cambiar de estado y eliminar tareas usando la terminal.</p>
+                </li>
+              </ul>
+            </ul>
+              </ul>
+            </div>
+          </article>
+    </section> <!-- PROJECTS EXPERIENCE END -->
+
+    <!-- FOOTER -->
+    <footer class="content__footer">
+      <section class="footer_container container">
+          <nav class="nav nav--footer">
+              <h2 class="footer_title">Curso CSS.</h2>
+
+              <ul class="nav_link nav_link--footer">
+                  <li class="nav_items">
+                      <a href="#" class="nav_links">Inicio</a>
+                  </li>
+                  <li class="nav_items">
+                      <a href="#" class="nav_links">Acerca de</a>
+                  </li>
+                  <li class="nav_items">
+                      <a href="#" class="nav_links">Contacto</a>
+                  </li>
+                  <li class="nav_items">
+                      <a href="#" class="nav_links">Blog</a>
+                  </li>
+              </ul>
+          </nav>
+          <form class="footer_form">
+              <h2 class="footer_newsletter">Suscribete a la newsletter</h2>
+              <div class="footer_inputs">
+                  <input type="email" placeholder="Email" class="footer_input">
+                  <input type="submit" value="Registrate" class="footer_submit">
+              </div>
+          </form>
+      </section>
+
+      <section class="footer_copy container">
+          <div class="footer_social">
+              <a href="#" class="footer_icons"><img src="Images/Icons/facebook-circle.svg" class="footer_img"></a>
+              <a href="#" class="footer_icons"><img src="Images/Icons/instagram.svg" class="footer_img"></a>
+              <a href="#" class="footer_icons"><img src="Images/Icons/facebook-circle.svg" class="footer_img"></a>
+          </div>
+
+          <h3 class="footer_coypright">Derechos reservados &copy; Kevin Bolaños</h3>
+      </section>
+  </footer>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Poppins:wght@400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Chakra Petch", sans-serif;
+  /* font-family: "Libre Baskerville", serif; */
+  /* font-family: "Poppins", sans-serif; */
 }
 
 body {
@@ -12,32 +16,23 @@ body {
 /*===================== VARIABLES CSS ===================*/
 :root {
   --header-height: 3rem;
+  --skills-bar-length: 0%;
 
   /*============= COLORS ==============*/
   /* Change favorite color */
   /* Purple 250 - Green 142 - Blue 230 - Pink 340 */
 
-  --hue-color-230: 230;
+  --hue-color-230: 180;
   /* HSL color mode 230 */
-  --first-color: hsl(var(--hue-color-230), 69%, 61%);
+  --first-color: hsl(var(--hue-color-230), 34%, 10%);
   --first-color-second: hsl(var(--hue-color-230), 69%, 61%);
-  --first-color-alt: hsl(var(--hue-color-230), 57%, 53%);
-  --first-color-lighter: hsl(var(--hue-color-230), 92%, 85%);
-  --first-title-color: hsl(var(--hue-color-230), 8%, 15%);
-  --first-text-color-light: hsl(var(--hue-color-230), 8%, 45%);
-  --first-input-color: hsl(var(--hue-color-230), 70%, 96%);
-  --first-body-color: hsl(var(--hue-color-230), 30%, 35%);
-
-  --hue-color-221: 221;
-  /* HSL color mode 221 */
-  --second-color: hsl(var(--hue-color-221), 80%, 40%);
-  --second-color-second: hsl(var(--hue-color-221), 69%, 61%);
-  --second-color-alt: hsl(var(--hue-color-221), 56%, 56%);
-  --second-color-lighter: hsl(var(--hue-color-221), 92%, 85%);
-  --second-title-color: hsl(var(--hue-color-221), 8%, 15%);
-  --second-text-color-light: hsl(var(--hue-color-221), 8%, 45%);
-  --second-input-color: hsl(var(--hue-color-221), 70%, 96%);
-  --second-body-color: hsl(var(--hue-color-221), 32%, 21%);
+  --first-color-alt: hsl(var(--hue-color-230), 32%, 100%);
+  --first-color-lighter: hsl(var(--hue-color-230), 23%, 34%);
+  --first-title-color: hsl(var(--hue-color-230), 56%, 15%);
+  --fisrt-text-color: hsl(var(--hue-color-230), 32%, 100%);
+  --first-text-color-light: hsl(var(--hue-color-230), 10%, 0%);
+  --first-input-color: hsl(var(--hue-color-230), 30%, 30%);
+  --first-body-color: hsl(var(--hue-color-230), 5%, 76%);
 
   --container-color: #fff;
 
@@ -84,48 +79,50 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  color: hsl(0, 0%, 100%);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: rgba(0, 0, 0, 0.445);
+  background-color: hsla(180, 40%, 23%, 0.350);
 }
 
+/* Header decoration */
 .image-header {
   position: absolute;
   width: 100%;
   height: 60px;
   top: 0;
-  /* margin-top: -50%; */
-  /* z-index: 1; */
 }
 
 .image-header img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
 }
 
 .mylogo {
   position: relative;
   font-size: 2.2rem;
-  color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: 800;
   cursor: pointer;
   margin-left: 15px;
+  color: var(--first-color-alt);
+}
+
+.mylogo > span:hover {
+  color: var(--first-color-lighter);
 }
 
 .navbar a {
   position: relative;
-  font-size: 1.5rem;
-  color: var(--first-color-alt);
+  font-size: 1.2rem;
   text-decoration: none;
   font-weight: 700;
-  margin-left: 25px;
+  margin-left: 15px;
+  color: var(--first-color-alt);
 }
 
-/* Cambia de color las etiquetas "a" */
+/* El hover cambia de color las etiquetas "a" */
 .navbar a:hover {
-  color: var(--first-color);
+  color: var(--first-color-lighter)
 }
 
 .home {
@@ -140,25 +137,50 @@ body {
   background-color: var(--first-body-color);
 }
 
+/* content home */
+
 .content {
   margin-left: 50px;
 }
 
-.content h3 {
-  font-size: 2.3rem;
+.content h3{
+  font-size: 2.5rem;
   font-weight: 700;
-  color: rgb(235, 235, 255);
   margin-bottom: 40px;
 }
 
 .content h1 {
-  font-size: 3.2rem;
-  font-weight: 800;
-  color: white;
+  font-size: 3rem;
 }
 
-span {
-  color: rgb(0, 0, 0);
+.content > h1 > span {
+  color: var(--first-input-color);
+  text-transform: uppercase;
+  text-shadow: -4px 7px 6px hsl(180, 34%, 15%);
+  background-clip: text;
+}
+
+/* style animation title */
+.content > h3 > span {
+  color: var(--first-input-color);
+  text-shadow: -4px 7px 6px hsl(180, 34%, 15%);
+  background-clip: text;
+  display: inline-block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  padding-left: 20px;
+  width: 27ch;
+
+  animation: typing 4s steps(27), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from { width: 0; }
+}
+
+@keyframes blink {
+  50% { border-right:  transparent; }
 }
 
 .content p {
@@ -168,7 +190,6 @@ span {
   width: 550px;
   height: 150px;
   font-size: 1.6rem;
-  color: var(--first-title-color);
 }
 
 /* IMAGE PROFILE */
@@ -225,7 +246,7 @@ html {
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: var(--second-body-color);
+  background-color: var(--first-body-color);
 }
 
 /* Background decoration */
@@ -263,6 +284,7 @@ html {
 .content__about-me p {
   font-size: 1.2rem;
   padding-bottom: 10px;
+  font-weight: 500;
 }
 
 /* title and paragraph */
@@ -275,6 +297,7 @@ html {
   font-size: 2.5rem;
   text-align: center;
   padding-bottom: 30px;
+  color: var(--first-color-lighter);
 }
 
 /* EDUCATION SECTION */
@@ -311,6 +334,7 @@ html {
   font-size: 2.5rem;
   text-align: center;
   padding-bottom: 15px;
+  color: var(--first-color-lighter);
 }
 
 .content__education h3 {
@@ -327,7 +351,7 @@ html {
   padding-bottom: 30px;
 }
 
-/* SKILLS AND WORK EXPERIENCE */
+/* SKILLS AND OTHER COURSES */
 
 .skills__other-courses {
   display: flex;
@@ -354,7 +378,7 @@ html {
   height: 100%;
 }
 
-.image-background-rigth {
+.image-background-right {
   position: absolute;
   height: 100%;
   width: 80px;
@@ -362,10 +386,9 @@ html {
   z-index: 1;
 }
 
-.image-background-rigth img {
+.image-background-right img {
   position: absolute;
   object-fit: cover;
-  /* right: 0; */
   width: 100%;
   height: 100%;
 }
@@ -389,6 +412,7 @@ html {
   font-size: 2.5rem;
   text-align: center;
   padding-bottom: 50px;
+  color: var(--first-color-lighter);
 }
 
 .container__skills {
@@ -407,7 +431,7 @@ html {
 .skills__icon,
 .skills__arrow {
   font-size: 2.5rem;
-  color: var(--first-color);
+  color: var(--first-color-lighter);
 }
 
 .skills__icon {
@@ -426,7 +450,7 @@ html {
 
 .subtitle__skills {
   font-size: 1rem;
-  color: var(--first-text-color-light);
+  color: var(--first-color-lighter);
   justify-content: start;
 }
 
@@ -464,22 +488,22 @@ html {
 
 /* BAR EXPERIENCE */
 .skills__html {
-  width: 90%;
+  width: 85%;
 }
 .skills__css {
-  width: 80%;
+  width: 55%;
 }
 .skills__js {
-  width: 70%;
+  width: 30%;
 }
 .skills__react {
-  width: 90%;
+  width: 35%;
 }
 .skills__node {
-  width: 80%;
+  width: 45%;
 }
 .skills__mongodb {
-  width: 70%;
+  width: 50%;
 }
 
 /* DISGUISE SKILLS */
@@ -500,53 +524,299 @@ html {
 /* OTHER COURSES SECTION */
 
 .content__other-courses {
-    position: absolute;
-    border: solid;
-    width: 50%;
-    right: 0;
-    height: 100%;
-    padding-right: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  width: 50%;
+  right: 0;
+  height: 100%;
+  padding-right: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
 }
 
 .container__other-courses h1 {
-    font-size: 2.5rem;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.container__other-courses h3 {
-    font-size: 1.3rem;
-    width: 400px;
-    padding-bottom: 20px;
+  font-size: 2.5rem;
+  padding-bottom: 5px;
+  text-align: center;
+  color: var(--first-color-lighter);
 }
 
 .container__other-courses li {
-    list-style: none;
-    padding-bottom: 12px;
+  list-style: none;
+  padding-bottom: 7px;
 }
 
 .container__other-courses li > p {
-    font-weight: 700;
-    font-size: 1.1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
-.container__other-courses li div {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1rem;
-    padding: 2px;
+.position-courses {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 2px;
+  font-weight: 600;
 }
 
-.container__other-courses a {
-    font-weight: 800;
+/* Certificate */
+
+.shakeX a {
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--first-color);
+  padding-inline: 6px;
 }
 
+.shakeX i {
+  font-size: 1.3rem;
+  color: var(--first-color-lighter);
+}
 
+.shakeX a:hover {
+  color: var(--first-color-lighter);
+}
 
+/* PROJECTS EXPERIENCE */
 
+.projects__experience {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-color: var(--first-body-color);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Background decoration */
+.image-projects-top {
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.image-projects-top img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.image-projects-bottom {
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+.image-projects-bottom img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.content__projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+}
+
+.container__projects {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 630px;
+}
+
+.container__projects h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.container__projects > h3 {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.container__projects li {
+  list-style: none;
+}
+
+.container__projects li > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__projects li > div > h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.container__projects p {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.content__projects-second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 20px;
+}
+
+.container__projects-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 630px;
+  margin-top: -40px;
+}
+
+.container__projects-second h3 {
+  font-size: 1.5rem;
+  padding-bottom: 5px;
+}
+
+.container__projects-second li {
+  list-style: none;
+}
+
+.container__projects-second li > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__projects-second li > div > h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.container__projects-second p {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+/* FOOTER */
+
+.content__footer {
+  background-color: #1D293F;
+  height: 50vh;
+  /* background-size: cover; */
+  /* position: relative; */
+  /* width: 100%; */
+  margin: 0 auto;
+}
+
+.footer_title {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.footer_title, .footer_newsletter {
+  /* color: #fff; */
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  /* padding-bottom: 120px; */
+  /* margin: 0 auto; */
+}
+
+.nav--footer {
+  padding-bottom: 20px;
+  display: grid;
+  gap: 1em;
+  grid-auto-flow: row;
+  height: 100%;
+}
+
+.nav_link--footer {
+  display: flex;
+  margin: 0;
+  margin-right: 20px;
+  flex-wrap: wrap;
+}
+
+.footer_inputs {
+  margin-top: 10px;
+  display: flex;
+  overflow: hidden;
+}
+
+.footer_input {
+  background-color: #fff;
+  height: 50px;
+  display: block;
+  padding-left: 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  margin-right: 16px;
+}
+
+.footer_submit {
+  margin-left: auto;
+  display: inline-block;
+  /* height: 50px; */
+  padding-top: 30px 40px;
+  background-color: #2091F9;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.footer_copy {
+  padding: 30px 0;
+  /* --padding-container: 30px 0; */
+  text-align: center;
+  color: #fff;
+}
+
+.footer_copyrigth {
+  font-weight: 300;
+}
+
+.footer_icons {
+  margin-bottom: 10px;
+}
+
+.footer_img {
+  width: 30px;
+}
 
 /* RESPONSIVE QUERIES */
 

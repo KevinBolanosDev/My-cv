@@ -1,0 +1,147 @@
+/* HOME - FOOTER */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #222222;
+  overflow: hidden;
+}
+
+.square {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(#303030, #757575);
+  z-index: 2;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: #1cd99d;
+  border-radius: 50%;
+}
+
+.triangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: #f5f5f5;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* SECTIONS */
+
+@import "compass/css3";
+
+/* body {
+  margin: 0;
+} */
+
+.container {
+  display: flex;
+}
+
+.row {
+  background: #222222;
+  height: 100vh;
+  width: 100%;
+  animation: fade 3s infinite;
+  animation-direction: alternate;
+}
+
+.row-2 {
+  animation-delay: 0.3s;
+}
+.row-3 {
+  animation-delay: 0.7s;
+}
+.row-4 {
+  animation-delay: 1.2s;
+}
+.row-5 {
+  animation-delay: 1.7s;
+}
+.row-6 {
+  animation-delay: 2.2s;
+}
+.row-7 {
+  animation-delay: 2.7s;
+}
+.row-8 {
+  animation-delay: 3.2s;
+}
+.row-9 {
+  animation-delay: 3.7s;
+}
+.row-10 {
+  animation-delay: 4.2s;
+}
+.row-11 {
+  animation-delay: 4.7s;
+}
+.row-12 {
+  animation-delay: 5.2s;
+}
+.row-13 {
+  animation-delay: 5.7s;
+}
+.row-14 {
+  animation-delay: 6.2s;
+}
+.row-15 {
+  animation-delay: 6.7s;
+}
+.row-16 {
+  animation-delay: 7.2s;
+}
+.row-17 {
+  animation-delay: 7.7s;
+}
+.row-18 {
+  animation-delay: 8.2s;
+}
+.row-19 {
+  animation-delay: 8.7s;
+}
+.row-20 {
+  animation-delay: 9.2s;
+}
+
+@keyframes fade {
+  from {
+	  background: #357c6e8e;
+	}
+	to {
+	  background: #222222;
+  }
+}
+
+
+/* SKILLS */
+
+	svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+    width: 100%;
+    height: 100%;
+		box-sizing: border-box;
+		display: block;
+		background-color: #777777c4;
+    background-image: linear-gradient(to bottom, #8ea7a3c5, rgba(73, 117, 114, 0.781));
+	}

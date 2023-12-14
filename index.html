@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    <link 
-      rel="stylesheet" 
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
     <title>Mi Portafolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
   </head>
   <body>
     <!-- HEADER NAV -->
     <header class="header">
-      <a href="#home" class="mylogo"><span>Mi Resume</span></a>
+      <a href="#home" class="mylogo"><span>Mi Personal CV</span></a>
       <nav class="navbar">
         <a href="#about-me">Acerca De Mi</a>
         <a href="#about-me">Educación</a>
@@ -32,14 +33,15 @@
 
     <!-- HOME SECTION -->
     <section id="home" class="home">
-      <div class="image-header">
-        <img src="/img/background-decoration.png" alt="background-decoration" />
-      </div>
+      <!-- Background animation -->
+      <iframe class="background__header-decoration" src="/animations/animation-sections.html">
+      </iframe>
 
       <div class="content">
-        <h3 id="bounceInDown">Bienvenidos a mi Resume</h3>
-          <h1 id="bounceInLeft">Soy <span>Kevin Bolaños</span></h1>
-          <h3><span>Desarrollador Full-Stack MERN</span></h3>
+        <h2 class="welcome__title" id="bounceInDown">Bienvenidos a mi</h2>
+        <h2 class="welcome__subtitle" id="bounceInRight">Curriculum Vitae</h2>
+        <h1 id="bounceInLeft">Soy <span>Kevin Bolaños</span></h1>
+        <h3><span>Desarrollador Full-Stack MERN</span></h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
           repudiandae neque exercitationem aperiam alias nam Lorem ipsum, dolor
@@ -49,19 +51,17 @@
       <div class="image-container">
         <img src="/img/Img-me.jpeg" alt="photo-profile" />
       </div>
-      <div class="image-background">
-        <img src="/img/background-decoration.png" alt="background-home" />
-      </div>
+      
+      <!-- ANIMATION CONTENT -->
+      <iframe class="background__home-decoration" src="/animations/animation-home-footer.html"></iframe>
     </section>
     <!-- HOME SECTION END -->
 
     <!-- ABOUT ME AND EDUCATION SECTION -->
     <section id="about-me" class="about-me__education">
-      <div class="image-about-section-top">
-        <img src="/img/background-decoration.png" alt="background-decoration" />
-      </div>
-      <div class="image-about-section-bottom">
-        <img src="/img/background-decoration.png" alt="background-decoration" />
+      <iframe class="background__about-me-top" src="/animations/animation-sections.html">
+      </iframe>
+      <div class="background__about-me-bottom">
       </div>
 
       <!-- ABOUT ME SECTION -->
@@ -95,26 +95,38 @@
           <h1 class="flipInX">Educación</h1>
           <h3>Conocé mi formación académica</h3>
           <ul>
-            <li>Bootcamp talento digital - Habilidades socioemocionales</li>
-            <div>
-              <p>Pro talento</p>
-              <p>Marzo 2023 - Noviembre 2023</p>
-            </div>
+            <li>
+              <h4>Bootcamp talento digital - Habilidades socioemocionales</h4>
+              <div class="position-education">
+                <p>Pro talento</p>
+                <p>Marzo 2023 - Noviembre 2023</p>
+              </div>
+            </li>
           </ul>
           <ul>
-            <li>Desarrollo web full stack javascript MERN</li>
-            <div>
-              <p>Bootcamp ada school</p>
-              <p>Marzo 2023 - noviembre 2023</p>
-              <a href="https://learn.ada-school.org/certifications/65451dc4831c9788c54e7f3e">Certificado</a>
-            </div>
+            <li>
+              <h4>Desarrollo web full stack javascript MERN</h4>
+              <div class="position-education">
+                <p>Bootcamp ada school</p>
+                <p>Marzo 2023 - noviembre 2023</p>
+              </div>
+              <div class="shakeX">
+                <i class="uil uil-file-bookmark-alt"></i>
+                <a
+                  href="https://learn.ada-school.org/certifications/65451dc4831c9788c54e7f3e"
+                  >Certificado</a
+                >
+              </div>
+            </li>
           </ul>
           <ul>
-            <li>Diseño gráfico</li>
-            <div>
-              <p>Politécnico superior de occidente</p>
-              <p>Enero 2015 - Diciembre 2017</p>
-            </div>
+            <li>
+              <h4>Diseño gráfico</h4>
+              <div class="position-education">
+                <p>Politécnico superior de occidente</p>
+                <p>Enero 2015 - Diciembre 2017</p>
+              </div>
+            </li>
           </ul>
         </div>
       </article>
@@ -123,12 +135,8 @@
 
     <!-- SKILLS AND OTHER COURSES -->
     <section id="skills" class="skills__other-courses">
-      <div class="image-background-left">
-        <img src="/img/background-decoration.png" alt="background-decoration" />
-      </div>
-      <div class="image-background-right">
-        <img src="/img/background-decoration.png" alt="background-decoration" />
-      </div>
+      <iframe class="background__skills-content" src="/animations/animation-skills.html">
+      </iframe>
 
       <!-- SKILLS SECTION -->
       <section class="content__skills" id="skills">
@@ -157,7 +165,7 @@
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">HTML</h3>
-                  <span class="skills__number">85%</span>
+                  <span class="skills__number">90%</span>
                 </div>
                 <div class="skills__bar">
                   <span class="skills__percentage skills__html"></span>
@@ -168,7 +176,7 @@
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">CSS</h3>
-                  <span class="skills__number">55%</span>
+                  <span class="skills__number">50%</span>
                 </div>
                 <div class="skills__bar">
                   <span class="skills__percentage skills__css"></span>
@@ -190,7 +198,7 @@
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">React</h3>
-                  <span class="skills__number">35%</span>
+                  <span class="skills__number">30%</span>
                 </div>
                 <div class="skills__bar">
                   <span class="skills__percentage skills__react"></span>
@@ -218,10 +226,21 @@
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">Node JS</h3>
-                  <span class="skills__number">45%</span>
+                  <span class="skills__number">40%</span>
                 </div>
                 <div class="skills__bar">
                   <span class="skills__percentage skills__node"></span>
+                </div>
+              </div>
+
+              <!-- EXPRESS -->
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Express</h3>
+                  <span class="skills__number">50%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__express"></span>
                 </div>
               </div>
 
@@ -249,7 +268,9 @@
             <h1 id="lightSpeedInRight">Cursos adicionales</h1>
             <ul>
               <li>
-                <p>Certificado profesional de Desarrollador front-end de Meta</p>
+                <p>
+                  Certificado profesional de Desarrollador front-end de Meta
+                </p>
                 <div class="position-courses">
                   <p>Coursera - Meta</p>
                   <p>Noviembre 2023 - Actualidad</p>
@@ -267,7 +288,10 @@
                 </div>
                 <div class="shakeX">
                   <i class="uil uil-file-bookmark-alt"></i>
-                  <a href="https://coursera.org/share/28aebd6ee27f673c2dff82fe107cffe1">Certificado</a>
+                  <a
+                    href="https://coursera.org/share/28aebd6ee27f673c2dff82fe107cffe1"
+                    >Certificado</a
+                  >
                 </div>
               </li>
               <li>
@@ -278,7 +302,10 @@
                 </div>
                 <div class="shakeX">
                   <i class="uil uil-file-bookmark-alt"></i>
-                  <a href="https://coursera.org/share/cdc35b9b295df9c7ee8ad1a5156ba950">Certificado</a>
+                  <a
+                    href="https://coursera.org/share/cdc35b9b295df9c7ee8ad1a5156ba950"
+                    >Certificado</a
+                  >
                 </div>
               </li>
               <li>
@@ -288,8 +315,11 @@
                   <p>Octubre - 2023</p>
                 </div>
                 <div class="shakeX">
-                  <i class="uil uil-file-bookmark-alt"></i>    
-                  <a href="https://coursera.org/share/502eb966559616bcd0a5710cd5468eed">Certificado</a>
+                  <i class="uil uil-file-bookmark-alt"></i>
+                  <a
+                    href="https://coursera.org/share/502eb966559616bcd0a5710cd5468eed"
+                    >Certificado</a
+                  >
                 </div>
               </li>
               <li>
@@ -300,18 +330,27 @@
                 </div>
                 <div class="shakeX">
                   <i class="uil uil-file-bookmark-alt"></i>
-                  <a href="https://www.linkedin.com/learning/certificates/fdf1e5b4898afa32a4d8de7632cad3c82625595294b762e10ff6fa1c74a96aee">Certificado</a>
+                  <a
+                    href="https://www.linkedin.com/learning/certificates/fdf1e5b4898afa32a4d8de7632cad3c82625595294b762e10ff6fa1c74a96aee"
+                    >Certificado</a
+                  >
                 </div>
               </li>
               <li>
-                <p>Introducción a las habilidades profesionales en análisis de datos</p>
+                <p>
+                  Introducción a las habilidades profesionales en análisis de
+                  datos
+                </p>
                 <div class="position-courses">
                   <p>LinkedIn</p>
                   <p>Julio - 2023</p>
                 </div>
                 <div class="shakeX">
-                  <i class="uil uil-file-bookmark-alt"></i>  
-                  <a href="https://www.linkedin.com/learning/certificates/9ce8f551515b987ce8f89fdba7c9d5a2160e1d80477e8480c7685b3d686dac58">Certificado</a>
+                  <i class="uil uil-file-bookmark-alt"></i>
+                  <a
+                    href="https://www.linkedin.com/learning/certificates/9ce8f551515b987ce8f89fdba7c9d5a2160e1d80477e8480c7685b3d686dac58"
+                    >Certificado</a
+                  >
                 </div>
               </li>
               <li>
@@ -322,7 +361,10 @@
                 </div>
                 <div class="shakeX">
                   <i class="uil uil-file-bookmark-alt"></i>
-                  <a href="https://skillshop.exceedlms.com/student/award/2sYGFaZuxcZBNpN9EHZ1rTYz">Certificado</a>
+                  <a
+                    href="https://skillshop.exceedlms.com/student/award/2sYGFaZuxcZBNpN9EHZ1rTYz"
+                    >Certificado</a
+                  >
                 </div>
               </li>
             </ul>
@@ -333,129 +375,216 @@
     </section>
     <!-- SKILLS AND OTHER COURSES END -->
 
-    <!-- PROJECTS EXPERIENCE  -->
+    <!-- PROJECTS EXPERIENCE -->
     <section id="projects" class="projects__experience">
-      <div class="image-projects-top">
-        <img src="/img/background-decoration.png" alt="background-decoration" />
-      </div>
-      <div class="image-projects-bottom">
-        <img src="/img/background-decoration.png" alt="background-decoration" />
-      </div>
-      <div class="title-projects">
-      </div>
-      
+      <iframe class="background__projects-bottom" src="/animations/animation-sections.html">
+      </iframe>
+      <div class="title-projects"></div>
+
       <section class="content__projects">
-        
         <!-- first article -->
         <article>
           <div class="container__projects">
-              <h1 id="fadeInTopLeft">Proyectos</h1>
+            <h1 id="fadeInTopLeft">Proyectos</h1>
             <h3>Proyectos que he realizado en el bootcamp</h3>
             <ul>
-              <li>
-                <h3>Calculadora con HTML, CSS y Javascript</h3>
-                <div>
-                  <h3>Noviembre - 2023</h3>
-                  <h3>Proyecto personal</h3>
+              <li class="style__projects-list">
+                <h3 class="subtitle__projects">Calculadora con HTML, CSS y Javascript</h3>
+                <div class="position__projects-date">
+                  <h3 class="subtitle__projects-date">Noviembre - 2023</h3>
+                  <h3 class="subtitle__projects-date">Proyecto personal</h3>
                 </div>
-                <p>Desarrollar una calculadora usando HTML, CSS y Javascript, desarrolle una calculadora con la funcionalidad simple para sumar, restar, multiplicar y dividir implementando la lógica de javascript.</p>
+                <p class="paragraph__projects">
+                  Desarrollar una calculadora usando HTML, CSS y Javascript,
+                  desarrolle una calculadora con la funcionalidad simple para
+                  sumar, restar, multiplicar y dividir implementando la lógica
+                  de javascript.
+                </p>
               </li>
-              <li>
-                <h3>Aplicación Front End To do list con React</h3>
-                <div>
-                  <h3>Octubre - 2023</h3>
-                  <h3>Bootcamp Ada School</h3>
+              <li class="style__projects-list">
+                <h3 class="subtitle__projects">Aplicación Front End To do list con React</h3>
+                <div class="position__projects-date">
+                  <h3 class="subtitle__projects-date">Octubre - 2023</h3>
+                  <h3 class="subtitle__projects-date">Bootcamp Ada School</h3>
                 </div>
-                <p>Desarrollé la interfaz de una aplicación de una lista de tareas con el framework React creando rutas para agregar las tareas con su descripción, listar, editar, cambiar estado de la tarea a completada y eliminarla, lo desarrolle en diferentes componentes para la optimización de la aplicación, y utilicé la biblioteca Chakra UI para la interfaz de usuarios.</p>
+                <p class="paragraph__projects">
+                  Desarrollé la interfaz de una aplicación de una lista de
+                  tareas con el framework React creando rutas para agregar las
+                  tareas con su descripción, listar, editar, cambiar estado de
+                  la tarea a completada y eliminarla, lo desarrolle en
+                  diferentes componentes para la optimización de la aplicación,
+                  y utilicé la biblioteca Chakra UI para la interfaz de
+                  usuarios.
+                </p>
               </li>
-              <li>
-                <h3>Hoja de vida con HTML y CSS</h3>
-                <div>
-                  <h3>Abril - 2023</h3>
-                  <h3>Bootcamp Ada School</h3>
+              <li class="style__projects-list">
+                <h3 class="subtitle__projects">Hoja de vida con HTML y CSS</h3>
+                <div class="position__projects-date">
+                  <h3 class="subtitle__projects-date">Abril - 2023</h3>
+                  <h3 class="subtitle__projects-date">Bootcamp Ada School</h3>
                 </div>
-                <p>DDesarrollé un CV básico, utilizando HTML y CSS, interactúe con el front end, diseñando la estructura básica que compone una página web y la creación de estilos con CSS.</p>
+                <p class="paragraph__projects">
+                  DDesarrollé un CV básico, utilizando HTML y CSS, interactúe
+                  con el front end, diseñando la estructura básica que compone
+                  una página web y la creación de estilos con CSS.
+                </p>
               </li>
             </ul>
           </div>
-          </article>
-        </section>
-          
-          <!-- SECOND ARTICLE -->
-          <article class="content__projects-second">
-            <div class="container__projects-second">
-              <ul>
-                <li>
-                  <h3>Aplicación Notes con Bootstrap</h3>
-                  <div>
-                    <h3>Octubre - 2023</h3>
-                    <h3>Bootcamp Ada School</h3>
-                  </div>
-                  <p>Desarrollé un servidor con Node, cree un modelo de datos para MongoDB, conecte el servidor a la base, diseñe diferentes rutas con el método CRUD para agregar, editar, eliminar las notas y para el front-end use handlebars un motor de plantillas de HTML.</p>
-                </li>
-                <li>
-                  <h3>Crear servidor en Node y Express</h3>
-                  <div>
-                    <h3>Agosto - 2023</h3>
-                    <h3>Bootcamp Ada School</h3>
-                  </div>
-                  <p>Desarrollé servidores con Node y Express, conocimiento en la implementación de bibliotecas con Node como; jsonwebtoken, nodemon, cors, cookie-parser, bcryptjs, moongose, morgan, zod.</p>
-                </li>
-                <li>
-                  <h3>Lista de tareas en consola con Node</h3>
-                  <div>
-                    <h3>Julio - 2023</h3>
-                    <h3>Bootcamp Ada School</h3>
-                  </div>
-                  <p>Desarrollé una lista de tareas, utilizando node, un proyecto pequeño en el backend creando una interfaz de consola para tener un menú interactivo y usar las funcionalidades básicas de agregar, listar, modificar, cambiar de estado y eliminar tareas usando la terminal.</p>
-                </li>
-              </ul>
-            </ul>
-              </ul>
-            </div>
-          </article>
-    </section> <!-- PROJECTS EXPERIENCE END -->
+        </article>
+      </section>
+
+      <!-- SECOND ARTICLE -->
+      <article class="content__projects-second">
+        <div class="container__projects-second">
+          <ul>
+            <li class="style__projects-list">
+              <h3 class="subtitle__projects">Aplicación Notes con Bootstrap</h3>
+              <div class="position__projects-date">
+                <h3 class="subtitle__projects-date">Octubre - 2023</h3>
+                <h3 class="subtitle__projects-date">Bootcamp Ada School</h3>
+              </div>
+              <p class="paragraph__projects">
+                Desarrollé un servidor con Node, cree un modelo de datos para
+                MongoDB, conecte el servidor a la base, diseñe diferentes rutas
+                con el método CRUD para agregar, editar, eliminar las notas y
+                para el front-end use handlebars un motor de plantillas de HTML.
+              </p>
+            </li>
+            <li class="style__projects-list">
+              <h3 class="subtitle__projects">Crear servidor en Node y Express</h3>
+              <div class="position__projects-date">
+                <h3 class="subtitle__projects-date">Agosto - 2023</h3>
+                <h3 class="subtitle__projects-date">Bootcamp Ada School</h3>
+              </div>
+              <p class="paragraph__projects">
+                Desarrollé servidores con Node y Express, conocimiento en la
+                implementación de bibliotecas con Node como; jsonwebtoken,
+                nodemon, cors, cookie-parser, bcryptjs, moongose, morgan, zod.
+              </p>
+            </li>
+            <li class="style__projects-list">
+              <h3 class="subtitle__projects">Lista de tareas en consola con Node</h3>
+              <div class="position__projects-date">
+                <h3 class="subtitle__projects-date">Julio - 2023</h3>
+                <h3 class="subtitle__projects-date">Bootcamp Ada School</h3>
+              </div>
+              <p class="paragraph__projects">
+                Desarrollé una lista de tareas, utilizando node, un proyecto
+                pequeño en el backend creando una interfaz de consola para tener
+                un menú interactivo y usar las funcionalidades básicas de
+                agregar, listar, modificar, cambiar de estado y eliminar tareas
+                usando la terminal.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <!-- PROJECTS EXPERIENCE END -->
 
     <!-- FOOTER -->
-    <footer class="content__footer">
-      <section class="footer_container container">
-          <nav class="nav nav--footer">
-              <h2 class="footer_title">Curso CSS.</h2>
-
-              <ul class="nav_link nav_link--footer">
-                  <li class="nav_items">
-                      <a href="#" class="nav_links">Inicio</a>
-                  </li>
-                  <li class="nav_items">
-                      <a href="#" class="nav_links">Acerca de</a>
-                  </li>
-                  <li class="nav_items">
-                      <a href="#" class="nav_links">Contacto</a>
-                  </li>
-                  <li class="nav_items">
-                      <a href="#" class="nav_links">Blog</a>
-                  </li>
-              </ul>
-          </nav>
-          <form class="footer_form">
-              <h2 class="footer_newsletter">Suscribete a la newsletter</h2>
-              <div class="footer_inputs">
-                  <input type="email" placeholder="Email" class="footer_input">
-                  <input type="submit" value="Registrate" class="footer_submit">
-              </div>
-          </form>
-      </section>
-
-      <section class="footer_copy container">
-          <div class="footer_social">
-              <a href="#" class="footer_icons"><img src="Images/Icons/facebook-circle.svg" class="footer_img"></a>
-              <a href="#" class="footer_icons"><img src="Images/Icons/instagram.svg" class="footer_img"></a>
-              <a href="#" class="footer_icons"><img src="Images/Icons/facebook-circle.svg" class="footer_img"></a>
+    <footer class="footer">
+      <section class="content__footer">
+        <!-- ANIMATION CONTENT -->
+        <iframe class="background__footer-decoration" src="/animations/animation-home-footer.html"></iframe>
+        
+        <div class="container__nav-form">
+          <div class="title__footer-container">
+            <p class="title__name-footer">Desarrollador web full stack<span>Kevin Andrés Bolaños</span></p>
+            <!-- <h2 class="title__footer"><span></span></h2> -->
           </div>
+          <nav class="nav__footer">
+            <ul class="nav__link-footer">
+              <li>
+                <a href="#about-me">Acerca de mi</a>
+              </li>
+              <li>
+                <a href="#about-me">Educación</a>
+              </li>
+              <li>
+                <a href="#skills">Habilidades</a>
+              </li>
+              <li>
+                <a href="#skills">Cursos</a>
+              </li>
+              <li>
+                <a href="#projects">Proyectos</a>
+              </li>
+            </ul>
+          </nav>
 
-          <h3 class="footer_coypright">Derechos reservados &copy; Kevin Bolaños</h3>
+          <!-- FORM CONTACT -->
+          <form class="footer__form">
+            <h2>Contáctame</h2>
+            <div class="footer__inputs">
+              
+                <div class="container__inputs">
+                  <label class="style__label">Nombre</label>
+                  <input
+                    type="name"
+                    placeholder="Nombre"
+                    class="footer__input"
+                  />
+                </div>
+
+                <div class="container__inputs">
+                  <label class="style__label">Correo</label>
+                  <input
+                    type="email"
+                    placeholder="Correo"
+                    class="footer__input"
+                  />
+                </div>
+             
+                
+                <div class="container__textarea">
+                  <label class="style__label">Déjame tú mensaje</label>
+                  <textarea
+                  placeholder="Escribe aquí..."
+                  class="footer__input-message"
+                  ></textarea>
+                  <button type="submit" value="Enviar" class="footer__button">
+                    Enviar
+                  </button>
+                </div>
+            </div>
+          </form>
+        </div>
       </section>
-  </footer>
-    <script src="script.js"></script>
+
+      <!-- FOOTER SOCIAL -->
+      <div class="container__background-footer">  
+
+        <section class="footer__copy-container">
+          <h3 class="subtitle__footer">Kevin Andrés Bolaños Narvaéz</h3>
+        <div class="footer__social">
+          <div class="heartBeat">
+            <a href="https://www.linkedin.com/in/kevin-bolanos-dev/" class="footer__icons"
+              ><i class="uil uil-linkedin"></i>
+            </a>
+          </div>
+          <div class="heartBeat">
+            <a href="https://github.com/KevinBolanosDev" class="footer__icons"
+            ><i class="uil uil-github"></i>
+          </a>
+          </div>
+          <div class="heartBeat">
+            <a href="#" class="footer__icons"
+            ><i class="uil uil-whatsapp-alt heartBeat"></i>
+          </a>
+          </div>
+          <div class="heartBeat">
+            <a href="mailto:im.kevinbolanos.dev@gmail.com?subject=Dejá el asunto aquí...&body=Dejá tú mensaje..." class="footer__icons"
+              ><i class="uil uil-envelopes"></i></i>
+            </a>
+          </div>
+        </div>
+        <h3 class="subtitle__footer">Derechos reservados &copy; 2023 </h3>
+      </section>
+    </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="/scripts/script.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 function randomValues() {
     anime({
-      targets: '.square, .circle, .triangle',
+      targets: '.square, .square-2, .circle, .circle-2, .triangle, .triangle-2', 
       translateX: function() {
         return anime.random(-500, 500);
       },

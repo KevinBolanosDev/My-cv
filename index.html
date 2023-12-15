@@ -14,7 +14,6 @@
     />
     <title>Mi Portafolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-
   </head>
   <body>
     <!-- HEADER NAV -->
@@ -33,40 +32,59 @@
 
     <!-- HOME SECTION -->
     <section id="home" class="home">
-      <!-- Background animation -->
-      <iframe class="background__header-decoration" src="/animations/animation-sections.html">
+        <!-- Background animation -->
+      <iframe
+        class="background__header-decoration"
+        src="/animations/animation-sections.html"
+        >
       </iframe>
+        <div class="container__left">
+          <div class="content__left-home">
+            <h2 class="welcome__title" id="bounceInDown">Bienvenidos a mi</h2>
+            <h2 class="welcome__subtitle" id="bounceInRight">Curriculum Vitae</h2>
+            <h1 class="title__home-name" id="bounceInLeft">
+              Soy <span>Kevin Bolaños</span>
+            </h1>
+            <h3 class="title__home-dev">
+              <span>Desarrollador Full-Stack MERN</span>
+            </h3>
+            <p>
+              Nuestra vida constantemente se encuentra en una inevitable montaña rusa llena de emociones y adversidades, y dependera de cada uno de nosotros superarlas, con tranquilidad y paciencia, te puedo asegurar que cuando lo logramos, tendremos un crecimiento y una paz mental que nada, ni nadie te quitara.  
+            </p>
+          </div>
+      </div>
+      <div class="container__right">
+        <div class="container__back-img">
 
-      <div class="content">
-        <h2 class="welcome__title" id="bounceInDown">Bienvenidos a mi</h2>
-        <h2 class="welcome__subtitle" id="bounceInRight">Curriculum Vitae</h2>
-        <h1 id="bounceInLeft">Soy <span>Kevin Bolaños</span></h1>
-        <h3><span>Desarrollador Full-Stack MERN</span></h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-          repudiandae neque exercitationem aperiam alias nam Lorem ipsum, dolor
-          sit amet consectetur adipisicing elit. Labore, autem.
-        </p>
+          <!-- ANIMATION CONTENT -->
+          <iframe
+          class="background__home-decoration"
+          src="/animations/animation-home-footer.html"
+          ></iframe>
+          <div class="container__image-profile">
+            <img src="/img/Img-me.jpeg" alt="photo-profile" />
+          </div>   
+        </div>
       </div>
-      <div class="image-container">
-        <img src="/img/Img-me.jpeg" alt="photo-profile" />
-      </div>
-      
-      <!-- ANIMATION CONTENT -->
-      <iframe class="background__home-decoration" src="/animations/animation-home-footer.html"></iframe>
     </section>
     <!-- HOME SECTION END -->
 
     <!-- ABOUT ME AND EDUCATION SECTION -->
     <section id="about-me" class="about-me__education">
-      <iframe class="background__about-me-top" src="/animations/animation-sections.html">
+      <iframe
+        class="background__about-content"
+        src="/animations/animation-background.html"
+      >
       </iframe>
-      <div class="background__about-me-bottom">
-      </div>
+      <iframe
+        class="background__header-about"
+        src="/animations/animation-sections.html"
+      >
+      </iframe>
 
       <!-- ABOUT ME SECTION -->
-      <article class="content__about-me">
-        <div>
+      <section class="container__left-about">
+        <article class="content__left-about">
           <h1 class="flipInX">Acerca De Mi</h1>
           <p>
             Un entusiasta desarrollador web en proceso de formación constante,
@@ -86,18 +104,18 @@
             técnicas y personales e ir poco a poco estableciendo excelentes
             conocimientos sólidos como desarrollador Full Stack.
           </p>
-        </div>
-      </article>
+        </article>
+      </section>
 
       <!-- EDUCATION SECTION -->
-      <article class="content__education">
-        <div>
+      <section class="container__right-education">
+        <article class="content__right-education">
           <h1 class="flipInX">Educación</h1>
           <h3>Conocé mi formación académica</h3>
           <ul>
             <li>
               <h4>Bootcamp talento digital - Habilidades socioemocionales</h4>
-              <div class="position-education">
+              <div class="position__right-education">
                 <p>Pro talento</p>
                 <p>Marzo 2023 - Noviembre 2023</p>
               </div>
@@ -106,56 +124,60 @@
           <ul>
             <li>
               <h4>Desarrollo web full stack javascript MERN</h4>
-              <div class="position-education">
+              <div class="position__right-education">
                 <p>Bootcamp ada school</p>
                 <p>Marzo 2023 - noviembre 2023</p>
               </div>
               <div class="shakeX">
                 <i class="uil uil-file-bookmark-alt"></i>
-                <a
-                  href="https://learn.ada-school.org/certifications/65451dc4831c9788c54e7f3e"
-                  >Certificado</a
-                >
+                <a href="https://learn.ada-school.org/certifications/65451dc4831c9788c54e7f3e">Certificado</a>
               </div>
             </li>
           </ul>
           <ul>
             <li>
               <h4>Diseño gráfico</h4>
-              <div class="position-education">
+              <div class="position__right-education">
                 <p>Politécnico superior de occidente</p>
                 <p>Enero 2015 - Diciembre 2017</p>
               </div>
             </li>
           </ul>
-        </div>
-      </article>
+        </article>
+      </section>
     </section>
     <!-- ABOUT ME AND EDUCATION SECTION END -->
 
     <!-- SKILLS AND OTHER COURSES -->
     <section id="skills" class="skills__other-courses">
-      <iframe class="background__skills-content" src="/animations/animation-skills.html">
+      <iframe
+        class="background__skills-content"
+        src="/animations/animation-background.html"
+      >
+      </iframe>
+      <iframe
+        class="background__skills-header"
+        src="/animations/animation-sections.html"
+      >
       </iframe>
 
       <!-- SKILLS SECTION -->
-      <section class="content__skills" id="skills">
+      <section class="container__left-skills">
         <h2 id="lightSpeedInLeft" class="title__skill">Habilidades</h2>
-        <span class="subtitle__skills">Nivel Técnico</span>
+        <article class="content__left-skills">
+        <span class="subtitle__skill">Nivel Técnico</span>
 
         <!-- CONTAINER SKILLS -->
-        <section class="container__skills">
+        <section class="container__skills-bar">
           <!-- SKILLS FRONTEND -->
           <div class="skills__content_dev skills__open">
             <div class="skills__header">
               <!-- ICON -->
               <i class="uil uil-brackets-curly skills__icon"></i>
-
               <div>
-                <h1 class="title__skills">Desarrollador frontend</h1>
-                <span class="subtitle__skills">1 año de experiencia</span>
+                <h1 class="title__skills-bar">Desarrollador frontend</h1>
+                <span class="subtitle__skills-bar">1 año de experiencia</span>
               </div>
-
               <!-- ICON -->
               <i class="uil uil-angle-down skills__arrow"></i>
             </div>
@@ -214,8 +236,8 @@
               <i class="uil uil-server-network skills__icon"></i>
 
               <div>
-                <h1 class="title__skills">Desarrollador backend</h1>
-                <span class="subtitle__skills">1 año de experiencia</span>
+                <h1 class="title__skills-bar">Desarrollador backend</h1>
+                <span class="subtitle__skills-bar">1 año de experiencia</span>
               </div>
               <!-- ICON -->
               <i class="uil uil-angle-down skills__arrow"></i>
@@ -256,119 +278,118 @@
               </div>
             </div>
           </div>
-        </section>
+        </article>
         <!-- CONTAINER SKILLS END -->
-      </section>
+        </section>
       <!-- SKILLS SECTION END -->
 
       <!-- OTHER COURSES SECTION -->
-      <section class="content__other-courses">
-        <article class="container__other-courses">
-          <div>
+      <section class="container__right-courses">
+        <article class="content__right-courses">
             <h1 id="lightSpeedInRight">Cursos adicionales</h1>
             <ul>
               <li>
-                <p>
-                  Certificado profesional de Desarrollador front-end de Meta
-                </p>
+                <h4>
+                  Certificado profesional de desarrollador front-end de Meta
+                </h4>
                 <div class="position-courses">
                   <p>Coursera - Meta</p>
                   <p>Noviembre 2023 - Actualidad</p>
-                </div>
-                <div class="shakeX">
-                  <i class="uil uil-file-bookmark-alt"></i>
-                  <a href="#">Certificado</a>
+                  <div class="shakeX">
+                    <i class="uil uil-file-bookmark-alt"></i>
+                    <a href="#">Certificado</a>
+                  </div>
                 </div>
               </li>
               <li>
-                <p>Control de versiones (Curso 3)</p>
+                <h4>Control de versiones (Curso 3)</h4>
                 <div class="position-courses">
                   <p>Coursera - Meta</p>
                   <p>Diciembre - 2023</p>
-                </div>
-                <div class="shakeX">
-                  <i class="uil uil-file-bookmark-alt"></i>
-                  <a
-                    href="https://coursera.org/share/28aebd6ee27f673c2dff82fe107cffe1"
-                    >Certificado</a
-                  >
+                  <div class="shakeX">
+                    <i class="uil uil-file-bookmark-alt"></i>
+                    <a
+                      href="https://coursera.org/share/28aebd6ee27f673c2dff82fe107cffe1"
+                      >Certificado</a
+                    >
+                  </div>
                 </div>
               </li>
               <li>
-                <p>Introducción al desarrollo de front-end (Curso 1)</p>
+                <h4>Introducción al desarrollo de front-end (Curso 1)</h4>
                 <div class="position-courses">
                   <p>Coursera - Meta</p>
                   <p>Noviembre - 2023</p>
-                </div>
-                <div class="shakeX">
-                  <i class="uil uil-file-bookmark-alt"></i>
-                  <a
-                    href="https://coursera.org/share/cdc35b9b295df9c7ee8ad1a5156ba950"
-                    >Certificado</a
-                  >
+                  <div class="shakeX">
+                    <i class="uil uil-file-bookmark-alt"></i>
+                    <a
+                      href="https://coursera.org/share/cdc35b9b295df9c7ee8ad1a5156ba950"
+                      >Certificado</a
+                    >
+                  </div>
                 </div>
               </li>
               <li>
-                <p>Fundamentos de la ciberseguridad</p>
+                <h4>Fundamentos de la ciberseguridad</h4>
                 <div class="position-courses">
-                  <p>Coursera - Google certificates</p>
+                  <p>Coursera - Google</p>
                   <p>Octubre - 2023</p>
-                </div>
-                <div class="shakeX">
-                  <i class="uil uil-file-bookmark-alt"></i>
-                  <a
-                    href="https://coursera.org/share/502eb966559616bcd0a5710cd5468eed"
-                    >Certificado</a
-                  >
+                  <div class="shakeX">
+                    <i class="uil uil-file-bookmark-alt"></i>
+                    <a
+                      href="https://coursera.org/share/502eb966559616bcd0a5710cd5468eed"
+                      >Certificado</a
+                    >
+                  </div>
                 </div>
               </li>
               <li>
-                <p>Fundamentos del desarrollo web: Full Stack o Front-end</p>
+                <h4>Fundamentos del desarrollo web: Full Stack o Front-end</h4>
                 <div class="position-courses">
                   <p>LinkdeIn</p>
                   <p>Agosto - 2023</p>
-                </div>
-                <div class="shakeX">
-                  <i class="uil uil-file-bookmark-alt"></i>
-                  <a
-                    href="https://www.linkedin.com/learning/certificates/fdf1e5b4898afa32a4d8de7632cad3c82625595294b762e10ff6fa1c74a96aee"
-                    >Certificado</a
-                  >
+                  <div class="shakeX">
+                    <i class="uil uil-file-bookmark-alt"></i>
+                    <a
+                      href="https://www.linkedin.com/learning/certificates/fdf1e5b4898afa32a4d8de7632cad3c82625595294b762e10ff6fa1c74a96aee"
+                      >Certificado</a
+                    >
+                  </div>
                 </div>
               </li>
               <li>
-                <p>
+                <h4>
                   Introducción a las habilidades profesionales en análisis de
                   datos
-                </p>
+                </h4>
                 <div class="position-courses">
                   <p>LinkedIn</p>
                   <p>Julio - 2023</p>
-                </div>
-                <div class="shakeX">
-                  <i class="uil uil-file-bookmark-alt"></i>
-                  <a
-                    href="https://www.linkedin.com/learning/certificates/9ce8f551515b987ce8f89fdba7c9d5a2160e1d80477e8480c7685b3d686dac58"
-                    >Certificado</a
-                  >
+                  <div class="shakeX">
+                    <i class="uil uil-file-bookmark-alt"></i>
+                    <a
+                      href="https://www.linkedin.com/learning/certificates/9ce8f551515b987ce8f89fdba7c9d5a2160e1d80477e8480c7685b3d686dac58"
+                      >Certificado</a
+                    >
+                  </div>
                 </div>
               </li>
               <li>
-                <p>Protege tu Negocio: Ciberseguridad en el Teletrabajo</p>
+                <h4>Protege tu Negocio: Ciberseguridad en el Teletrabajo</h4>
                 <div class="position-courses">
                   <p>Google</p>
                   <p>Julio - 2023</p>
-                </div>
-                <div class="shakeX">
-                  <i class="uil uil-file-bookmark-alt"></i>
-                  <a
-                    href="https://skillshop.exceedlms.com/student/award/2sYGFaZuxcZBNpN9EHZ1rTYz"
-                    >Certificado</a
-                  >
+                  <div class="shakeX">
+                    <i class="uil uil-file-bookmark-alt"></i>
+                    <a
+                      href="https://skillshop.exceedlms.com/student/award/2sYGFaZuxcZBNpN9EHZ1rTYz"
+                      >Certificado</a
+                    >
+                  </div>
                 </div>
               </li>
             </ul>
-          </div>
+     
         </article>
       </section>
       <!-- CONTENT OTHER COURSES END -->
@@ -376,23 +397,31 @@
     <!-- SKILLS AND OTHER COURSES END -->
 
     <!-- PROJECTS EXPERIENCE -->
-    <section id="projects" class="projects__experience">
-      <iframe class="background__projects-bottom" src="/animations/animation-sections.html">
+    <section id="projects" class="projects">
+      <iframe
+        class="background__header-projects"
+        src="/animations/animation-sections.html"
+      >
       </iframe>
-      <div class="title-projects"></div>
+      <iframe
+        class="background__content-projects"
+        src="/animations/animation-background.html"
+      >
+      </iframe>
 
-      <section class="content__projects">
-        <!-- first article -->
-        <article>
-          <div class="container__projects">
+      <section class="container__left-projects">
+        <!-- Content left -->
+        <article class="content__left-projects">
             <h1 id="fadeInTopLeft">Proyectos</h1>
-            <h3>Proyectos que he realizado en el bootcamp</h3>
+            <h2>Proyectos que he realizado en el bootcamp</h2>
             <ul>
-              <li class="style__projects-list">
-                <h3 class="subtitle__projects">Calculadora con HTML, CSS y Javascript</h3>
+              <li>
+                <h3 class="subtitle__name-projects">
+                  Calculadora con HTML, CSS y Javascript
+                </h3>
                 <div class="position__projects-date">
-                  <h3 class="subtitle__projects-date">Noviembre - 2023</h3>
-                  <h3 class="subtitle__projects-date">Proyecto personal</h3>
+                  <h4 class="subtitle__date-projects">Noviembre - 2023</h4>
+                  <h4 class="subtitle__date-projects">Proyecto personal</h4>
                 </div>
                 <p class="paragraph__projects">
                   Desarrollar una calculadora usando HTML, CSS y Javascript,
@@ -401,11 +430,13 @@
                   de javascript.
                 </p>
               </li>
-              <li class="style__projects-list">
-                <h3 class="subtitle__projects">Aplicación Front End To do list con React</h3>
+              <li>
+                <h3 class="subtitle__name-projects">
+                  Aplicación Front End To do list con React
+                </h3>
                 <div class="position__projects-date">
-                  <h3 class="subtitle__projects-date">Octubre - 2023</h3>
-                  <h3 class="subtitle__projects-date">Bootcamp Ada School</h3>
+                  <h4 class="subtitle__date-projects">Octubre - 2023</h4>
+                  <h4 class="subtitle__date-projects">Bootcamp Ada School</h4>
                 </div>
                 <p class="paragraph__projects">
                   Desarrollé la interfaz de una aplicación de una lista de
@@ -417,32 +448,31 @@
                   usuarios.
                 </p>
               </li>
-              <li class="style__projects-list">
-                <h3 class="subtitle__projects">Hoja de vida con HTML y CSS</h3>
+              <li>
+                <h3 class="subtitle__name-projects">Hoja de vida con HTML y CSS</h3>
                 <div class="position__projects-date">
-                  <h3 class="subtitle__projects-date">Abril - 2023</h3>
-                  <h3 class="subtitle__projects-date">Bootcamp Ada School</h3>
+                  <h4 class="subtitle__date-projects">Abril - 2023</h4>
+                  <h4 class="subtitle__date-projects">Bootcamp Ada School</h4>
                 </div>
                 <p class="paragraph__projects">
-                  DDesarrollé un CV básico, utilizando HTML y CSS, interactúe
-                  con el front end, diseñando la estructura básica que compone
-                  una página web y la creación de estilos con CSS.
+                  Desarrollé un CV básico, utilizando HTML y CSS, interactúe con
+                  el front end, diseñando la estructura básica que compone una
+                  página web y la creación de estilos con CSS.
                 </p>
               </li>
             </ul>
-          </div>
         </article>
       </section>
 
-      <!-- SECOND ARTICLE -->
-      <article class="content__projects-second">
-        <div class="container__projects-second">
+      <!-- Content right -->
+      <section class="container__right-projects">
+        <article class="content__right-projects">
           <ul>
-            <li class="style__projects-list">
-              <h3 class="subtitle__projects">Aplicación Notes con Bootstrap</h3>
+            <li>
+              <h3 class="subtitle__name-projects">Aplicación Notes con Bootstrap</h3>
               <div class="position__projects-date">
-                <h3 class="subtitle__projects-date">Octubre - 2023</h3>
-                <h3 class="subtitle__projects-date">Bootcamp Ada School</h3>
+                <h4 class="subtitle__date-projects">Octubre - 2023</h4>
+                <h4 class="subtitle__date-projects">Bootcamp Ada School</h4>
               </div>
               <p class="paragraph__projects">
                 Desarrollé un servidor con Node, cree un modelo de datos para
@@ -451,11 +481,13 @@
                 para el front-end use handlebars un motor de plantillas de HTML.
               </p>
             </li>
-            <li class="style__projects-list">
-              <h3 class="subtitle__projects">Crear servidor en Node y Express</h3>
+            <li>
+              <h3 class="subtitle__name-projects">
+                Crear servidor en Node y Express
+              </h3>
               <div class="position__projects-date">
-                <h3 class="subtitle__projects-date">Agosto - 2023</h3>
-                <h3 class="subtitle__projects-date">Bootcamp Ada School</h3>
+                <h4 class="subtitle__date-projects">Agosto - 2023</h4>
+                <h4 class="subtitle__date-projects">Bootcamp Ada School</h4>
               </div>
               <p class="paragraph__projects">
                 Desarrollé servidores con Node y Express, conocimiento en la
@@ -463,11 +495,13 @@
                 nodemon, cors, cookie-parser, bcryptjs, moongose, morgan, zod.
               </p>
             </li>
-            <li class="style__projects-list">
-              <h3 class="subtitle__projects">Lista de tareas en consola con Node</h3>
+            <li>
+              <h3 class="subtitle__name-projects">
+                Lista de tareas en consola con Node
+              </h3>
               <div class="position__projects-date">
-                <h3 class="subtitle__projects-date">Julio - 2023</h3>
-                <h3 class="subtitle__projects-date">Bootcamp Ada School</h3>
+                <h4 class="subtitle__date-projects">Julio - 2023</h4>
+                <h4 class="subtitle__date-projects">Bootcamp Ada School</h4>
               </div>
               <p class="paragraph__projects">
                 Desarrollé una lista de tareas, utilizando node, un proyecto
@@ -478,8 +512,8 @@
               </p>
             </li>
           </ul>
-        </div>
-      </article>
+        </article>
+      </section>
     </section>
     <!-- PROJECTS EXPERIENCE END -->
 
@@ -487,12 +521,17 @@
     <footer class="footer">
       <section class="content__footer">
         <!-- ANIMATION CONTENT -->
-        <iframe class="background__footer-decoration" src="/animations/animation-home-footer.html"></iframe>
-        
-        <div class="container__nav-form">
+        <iframe
+          class="background__footer-decoration"
+          src="/animations/animation-home-footer.html"
+        ></iframe>
+
+        <article class="container__nav-form">
           <div class="title__footer-container">
-            <p class="title__name-footer">Desarrollador web full stack<span>Kevin Andrés Bolaños</span></p>
-            <!-- <h2 class="title__footer"><span></span></h2> -->
+            <h2 class="title__name-footer">Kevin Andrés Bolaños</h2>
+            <p class="title__footer">
+              <span>Desarrollador web full stack</span>
+            </p>
           </div>
           <nav class="nav__footer">
             <ul class="nav__link-footer">
@@ -518,71 +557,72 @@
           <form class="footer__form">
             <h2>Contáctame</h2>
             <div class="footer__inputs">
-              
-                <div class="container__inputs">
-                  <label class="style__label">Nombre</label>
-                  <input
-                    type="name"
-                    placeholder="Nombre"
-                    class="footer__input"
-                  />
-                </div>
+              <div class="container__inputs">
+                <label class="style__label">Nombre</label>
+                <input
+                  type="name"
+                  placeholder="Nombre..."
+                  class="footer__input"
+                />
+              </div>
 
-                <div class="container__inputs">
-                  <label class="style__label">Correo</label>
-                  <input
-                    type="email"
-                    placeholder="Correo"
-                    class="footer__input"
-                  />
-                </div>
-             
-                
-                <div class="container__textarea">
-                  <label class="style__label">Déjame tú mensaje</label>
-                  <textarea
+              <div class="container__inputs">
+                <label class="style__label">Correo</label>
+                <input
+                  type="email"
+                  placeholder="Correo..."
+                  class="footer__input"
+                />
+              </div>
+
+              <div class="container__textarea">
+                <label class="style__label">Déjame tú mensaje</label>
+                <textarea
                   placeholder="Escribe aquí..."
                   class="footer__input-message"
-                  ></textarea>
-                  <button type="submit" value="Enviar" class="footer__button">
-                    Enviar
-                  </button>
-                </div>
+                ></textarea>
+                <button type="submit" value="Enviar" class="footer__button">
+                  Enviar
+                </button>
+              </div>
             </div>
           </form>
-        </div>
+        </article>
       </section>
 
       <!-- FOOTER SOCIAL -->
-      <div class="container__background-footer">  
-
+      <div class="container__background-footer">
         <section class="footer__copy-container">
           <h3 class="subtitle__footer">Kevin Andrés Bolaños Narvaéz</h3>
-        <div class="footer__social">
-          <div class="heartBeat">
-            <a href="https://www.linkedin.com/in/kevin-bolanos-dev/" class="footer__icons"
-              ><i class="uil uil-linkedin"></i>
-            </a>
+          <div class="footer__social">
+            <div class="heartBeat">
+              <a
+                href="https://www.linkedin.com/in/kevin-bolanos-dev/"
+                class="footer__icons"
+                ><i class="uil uil-linkedin"></i>
+              </a>
+            </div>
+            <div class="heartBeat">
+              <a href="https://github.com/KevinBolanosDev" class="footer__icons"
+                ><i class="uil uil-github"></i>
+              </a>
+            </div>
+            <div class="heartBeat">
+              <a href="#" class="footer__icons"
+                ><i class="uil uil-whatsapp-alt heartBeat"></i>
+              </a>
+            </div>
+            <div class="heartBeat">
+              <a
+                href="mailto:im.kevinbolanos.dev@gmail.com?subject=Dejá el asunto aquí...&body=Dejá tú mensaje..."
+                class="footer__icons"
+                ><i class="uil uil-envelopes"></i>
+              </a>
+            </div>
           </div>
-          <div class="heartBeat">
-            <a href="https://github.com/KevinBolanosDev" class="footer__icons"
-            ><i class="uil uil-github"></i>
-          </a>
-          </div>
-          <div class="heartBeat">
-            <a href="#" class="footer__icons"
-            ><i class="uil uil-whatsapp-alt heartBeat"></i>
-          </a>
-          </div>
-          <div class="heartBeat">
-            <a href="mailto:im.kevinbolanos.dev@gmail.com?subject=Dejá el asunto aquí...&body=Dejá tú mensaje..." class="footer__icons"
-              ><i class="uil uil-envelopes"></i></i>
-            </a>
-          </div>
-        </div>
-        <h3 class="subtitle__footer">Derechos reservados &copy; 2023 </h3>
-      </section>
-    </div>
+          <h3 class="subtitle__footer">Derechos reservados &copy; 2023</h3>
+        </section>
+      </div>
     </footer>
     <!-- FOOTER END -->
     <script src="/scripts/script.js"></script>

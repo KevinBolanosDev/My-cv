@@ -100,6 +100,7 @@ toggleAnimationClass();
 setInterval(toggleAnimationId, 30000);
 setInterval(toggleAnimationClass, 10000);
 
+// MENU RESPONSIVE
 const navToggle = document.querySelector(".nav__toggle");
 const navMenu = document.querySelector(".nav__menu");
 

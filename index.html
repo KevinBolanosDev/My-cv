@@ -12,20 +12,39 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="shortcut icon" href="/img/header-home.png" type="image/x-icon">
     <title>Mi Portafolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   </head>
   <body>
     <!-- HEADER NAV -->
     <header class="header">
-      <a href="#home" class="mylogo"><span>Mi Personal CV</span></a>
-      <nav class="navbar">
-        <a href="#about-me">Acerca De Mi</a>
-        <a href="#about-me">Educación</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#skills">Cursos</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#contact">Contacto</a>
+      
+      <nav class="nav" id="nav">
+        <a href="#home" class="mylogo"><span> Personal CV</span></a>
+        <button class="nav__toggle" aria-label="Abrir menú">
+          <img src="/img/menu.svg" alt="Menu Header">
+        </button>
+        <ul class="nav__menu">
+          <li class="nav__menu-item">
+            <a class="nav__menu-link nav__link" href="#about-me">Acerca De Mi</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link nav__link" href="#about-me">Educación</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link nav__link" href="#skills">Habilidades</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link nav__link" href="#skills">Cursos</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link nav__link" href="#projects">Proyectos</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link nav__link nav__menu-link_active" href="#contact">Contacto</a>
+          </li>
+        </ul>          
       </nav>
     </header>
     <!-- HEADER NAV END -->
@@ -38,6 +57,10 @@
         src="/animations/animation-sections.html"
         >
       </iframe>
+      <iframe
+          class="background__home-decoration"
+          src="/animations/animation-home-footer.html"
+          ></iframe>
         <div class="container__left">
           <div class="content__left-home">
             <h2 class="welcome__title" id="bounceInDown">Bienvenidos a mi</h2>
@@ -48,19 +71,16 @@
             <h3 class="title__home-dev">
               <span>Desarrollador Full-Stack MERN</span>
             </h3>
-            <p>
-              Nuestra vida constantemente se encuentra en una inevitable montaña rusa llena de emociones y adversidades, y dependera de cada uno de nosotros superarlas, con tranquilidad y paciencia, te puedo asegurar que cuando lo logramos, tendremos un crecimiento y una paz mental que nada, ni nadie te quitara.  
-            </p>
+            <div class="container__p-home">
+              <p>
+                Nuestra vida constantemente se encuentra en una inevitable montaña rusa llena de emociones y adversidades, y dependera de cada uno de nosotros superarlas, con tranquilidad y paciencia, te puedo asegurar que cuando lo logremos, tendremos una paz mental que nos convertira más fuertes e imparables.
+              </p>
+            </div>
           </div>
       </div>
       <div class="container__right">
-        <div class="container__back-img">
-
-          <!-- ANIMATION CONTENT -->
-          <iframe
-          class="background__home-decoration"
-          src="/animations/animation-home-footer.html"
-          ></iframe>
+        <!-- PROFILE -->
+        <div class="container__position-profile">
           <div class="container__image-profile">
             <img src="/img/Img-me.jpeg" alt="photo-profile" />
           </div>   
@@ -86,24 +106,26 @@
       <section class="container__left-about">
         <article class="content__left-about">
           <h1 class="flipInX">Acerca De Mi</h1>
-          <p>
-            Un entusiasta desarrollador web en proceso de formación constante,
-            especializado en la creación y de desarrollo Full Stack de sitios y
-            aplicaciones web, empleando mis habilidades en HTML, CSS, JavaScript
-            y también usando el framework React, para la parte del backend tengo
-            conocimientos desarrollando servidores, diseñando rutas e
-            implementando autenticaciones de registro y el inicio de sesiones
-            encriptando contraseñas para la seguridad de la información de los
-            usuarios rutas.
-          </p>
-          <p>
-            Mi enfoque autodidacta y paciencia para la resolución de problemas
-            me lleva a buscar soluciones efectivas para diversas problemáticas
-            sociales. Siempre en busca de crecimiento, aprendizaje continuo,
-            actualización constante y ampliando constantemente mis habilidades
-            técnicas y personales e ir poco a poco estableciendo excelentes
-            conocimientos sólidos como desarrollador Full Stack.
-          </p>
+          <div class="container__p-about">
+            <p>
+              Un entusiasta desarrollador web en proceso de formación constante,
+              especializado en la creación y de desarrollo Full Stack de sitios y
+              aplicaciones web, empleando mis habilidades en HTML, CSS, JavaScript
+              y también usando el framework React, para la parte del backend tengo
+              conocimientos desarrollando servidores, diseñando rutas e
+              implementando autenticaciones de registro y el inicio de sesiones
+              encriptando contraseñas para la seguridad de la información de los
+              usuarios rutas.
+            </p>
+            <p>
+              Mi enfoque autodidacta y paciencia para la resolución de problemas
+              me lleva a buscar soluciones efectivas para diversas problemáticas
+              sociales. Siempre en busca de crecimiento, aprendizaje continuo,
+              actualización constante y ampliando constantemente mis habilidades
+              técnicas y personales e ir poco a poco estableciendo excelentes
+              conocimientos sólidos como desarrollador Full Stack.
+            </p>
+          </div>
         </article>
       </section>
 
@@ -111,38 +133,36 @@
       <section class="container__right-education">
         <article class="content__right-education">
           <h1 class="flipInX">Educación</h1>
-          <h3>Conocé mi formación académica</h3>
-          <ul>
-            <li>
-              <h4>Bootcamp talento digital - Habilidades socioemocionales</h4>
-              <div class="position__right-education">
-                <p>Pro talento</p>
-                <p>Marzo 2023 - Noviembre 2023</p>
-              </div>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <h4>Desarrollo web full stack javascript MERN</h4>
-              <div class="position__right-education">
-                <p>Bootcamp ada school</p>
-                <p>Marzo 2023 - noviembre 2023</p>
-              </div>
-              <div class="shakeX">
-                <i class="uil uil-file-bookmark-alt"></i>
-                <a href="https://learn.ada-school.org/certifications/65451dc4831c9788c54e7f3e">Certificado</a>
-              </div>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <h4>Diseño gráfico</h4>
-              <div class="position__right-education">
-                <p>Politécnico superior de occidente</p>
-                <p>Enero 2015 - Diciembre 2017</p>
-              </div>
-            </li>
-          </ul>
+          <div class="container__p-education">
+            <h3>Conocé mi formación académica</h3>
+            <ul class="list__education">
+              <li>
+                <h4>Bootcamp talento digital - Habilidades socioemocionales</h4>
+                <div class="position__right-education">
+                  <p>Pro talento</p>
+                  <p>Marzo 2023 - Noviembre 2023</p>
+                </div>
+              </li>
+              <li>
+                <h4>Desarrollo web full stack javascript MERN</h4>
+                <div class="position__right-education">
+                  <p>Bootcamp ada school</p>
+                  <p>Marzo 2023 - noviembre 2023</p>
+                </div>
+                <div class="shakeX">
+                  <i class="uil uil-file-bookmark-alt"></i>
+                  <a href="https://learn.ada-school.org/certifications/65451dc4831c9788c54e7f3e">Certificado</a>
+                </div>
+              </li>
+              <li>
+                <h4>Diseño gráfico</h4>
+                <div class="position__right-education">
+                  <p>Politécnico superior de occidente</p>
+                  <p>Enero 2015 - Diciembre 2017</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </article>
       </section>
     </section>
@@ -163,15 +183,15 @@
 
       <!-- SKILLS SECTION -->
       <section class="container__left-skills">
-        <h2 id="lightSpeedInLeft" class="title__skill">Habilidades</h2>
         <article class="content__left-skills">
+          <h2 id="lightSpeedInLeft" class="title__skill">Habilidades</h2>
         <span class="subtitle__skill">Nivel Técnico</span>
 
         <!-- CONTAINER SKILLS -->
         <section class="container__skills-bar">
           <!-- SKILLS FRONTEND -->
           <div class="skills__content_dev skills__open">
-            <div class="skills__header">
+          <div class="skills__header">
               <!-- ICON -->
               <i class="uil uil-brackets-curly skills__icon"></i>
               <div>
@@ -287,14 +307,15 @@
       <section class="container__right-courses">
         <article class="content__right-courses">
             <h1 id="lightSpeedInRight">Cursos adicionales</h1>
+            <div class="container__certificated-courses">
             <ul>
               <li>
                 <h4>
                   Certificado profesional de desarrollador front-end de Meta
                 </h4>
                 <div class="position-courses">
-                  <p>Coursera - Meta</p>
-                  <p>Noviembre 2023 - Actualidad</p>
+                  <p>Coursera</p>
+                  <p>Noviembre 2023 - Actual</p>
                   <div class="shakeX">
                     <i class="uil uil-file-bookmark-alt"></i>
                     <a href="#">Certificado</a>
@@ -304,7 +325,7 @@
               <li>
                 <h4>Control de versiones (Curso 3)</h4>
                 <div class="position-courses">
-                  <p>Coursera - Meta</p>
+                  <p>Coursera</p>
                   <p>Diciembre - 2023</p>
                   <div class="shakeX">
                     <i class="uil uil-file-bookmark-alt"></i>
@@ -318,7 +339,7 @@
               <li>
                 <h4>Introducción al desarrollo de front-end (Curso 1)</h4>
                 <div class="position-courses">
-                  <p>Coursera - Meta</p>
+                  <p>Coursera</p>
                   <p>Noviembre - 2023</p>
                   <div class="shakeX">
                     <i class="uil uil-file-bookmark-alt"></i>
@@ -332,7 +353,7 @@
               <li>
                 <h4>Fundamentos de la ciberseguridad</h4>
                 <div class="position-courses">
-                  <p>Coursera - Google</p>
+                  <p>Coursera</p>
                   <p>Octubre - 2023</p>
                   <div class="shakeX">
                     <i class="uil uil-file-bookmark-alt"></i>
@@ -389,7 +410,7 @@
                 </div>
               </li>
             </ul>
-     
+          </div>
         </article>
       </section>
       <!-- CONTENT OTHER COURSES END -->
@@ -413,6 +434,7 @@
         <!-- Content left -->
         <article class="content__left-projects">
             <h1 id="fadeInTopLeft">Proyectos</h1>
+            <div class="container__container-left_projects">
             <h2>Proyectos que he realizado en el bootcamp</h2>
             <ul>
               <li>
@@ -461,12 +483,14 @@
                 </p>
               </li>
             </ul>
+          </div>
         </article>
       </section>
 
       <!-- Content right -->
       <section class="container__right-projects">
         <article class="content__right-projects">
+          <div class="container__container-right_projects">
           <ul>
             <li>
               <h3 class="subtitle__name-projects">Aplicación Notes con Bootstrap</h3>
@@ -512,13 +536,14 @@
               </p>
             </li>
           </ul>
+        </div>
         </article>
       </section>
     </section>
     <!-- PROJECTS EXPERIENCE END -->
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <section class="content__footer">
         <!-- ANIMATION CONTENT -->
         <iframe
@@ -533,7 +558,7 @@
               <span>Desarrollador web full stack</span>
             </p>
           </div>
-          <nav class="nav__footer">
+          <!-- <nav class="nav__footer">
             <ul class="nav__link-footer">
               <li>
                 <a href="#about-me">Acerca de mi</a>
@@ -551,7 +576,7 @@
                 <a href="#projects">Proyectos</a>
               </li>
             </ul>
-          </nav>
+          </nav> -->
 
           <!-- FORM CONTACT -->
           <form class="footer__form">
@@ -593,34 +618,30 @@
       <!-- FOOTER SOCIAL -->
       <div class="container__background-footer">
         <section class="footer__copy-container">
-          <h3 class="subtitle__footer">Kevin Andrés Bolaños Narvaéz</h3>
-          <div class="footer__social">
-            <div class="heartBeat">
-              <a
-                href="https://www.linkedin.com/in/kevin-bolanos-dev/"
-                class="footer__icons"
-                ><i class="uil uil-linkedin"></i>
+          <div class="footer__content">
+          <h3 class="subtitle__footer-name">Kevin Andrés Bolaños Narvaéz</h3>
+          <ul class="footer__social">
+            <li class="heartBeat link__items">
+              <a class="link__names link__color link__names-active" href="https://www.linkedin.com/in/kevin-bolanos-dev/">LinkedIn<i class="footer__icons uil uil-linkedin"></i>
               </a>
-            </div>
-            <div class="heartBeat">
-              <a href="https://github.com/KevinBolanosDev" class="footer__icons"
-                ><i class="uil uil-github"></i>
+            </li>
+            <li class="heartBeat link__items">
+              <a class="link__names link__color link__names-active" href="https://github.com/KevinBolanosDev">GitHub<i class="footer__icons uil uil-github"></i>
               </a>
-            </div>
-            <div class="heartBeat">
-              <a href="#" class="footer__icons"
-                ><i class="uil uil-whatsapp-alt heartBeat"></i>
+            </li>
+            <li class="heartBeat link__items">
+              <a class="link__names link__color link__names-active" href="#" >WhatsApp<i class="footer__icons uil uil-whatsapp-alt heartBeat"></i>
               </a>
-            </div>
-            <div class="heartBeat">
-              <a
+            </li>
+            <li class="heartBeat link__items">
+              <a class="link__names link__color link__names-active"
                 href="mailto:im.kevinbolanos.dev@gmail.com?subject=Dejá el asunto aquí...&body=Dejá tú mensaje..."
-                class="footer__icons"
-                ><i class="uil uil-envelopes"></i>
+                >Gmail<i class="footer__icons uil uil-envelopes"></i>
               </a>
-            </div>
-          </div>
-          <h3 class="subtitle__footer">Derechos reservados &copy; 2023</h3>
+            </li>
+          </ul>
+          <h3 class="subtitle__footer-copy">Derechos reservados &copy; 2023</h3>
+        </div>
         </section>
       </div>
     </footer>

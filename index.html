@@ -12,78 +12,109 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="shortcut icon" href="/img/header-home.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/header-home.png" type="image/x-icon" />
     <title>Mi Portafolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   </head>
   <body>
     <!-- HEADER NAV -->
     <header class="header">
-      
       <nav class="nav" id="nav">
         <a href="#home" class="mylogo"><span> Personal CV</span></a>
         <button class="nav__toggle" aria-label="Abrir menú">
-          <img src="/img/menu.svg" alt="Menu Header">
+          <i class="uil uil-align-justify" alt="Menu Header"></i>
         </button>
         <ul class="nav__menu">
           <li class="nav__menu-item">
-            <a class="nav__menu-link nav__link" href="#about-me">Acerca De Mi</a>
+            <a
+              class="nav__menu-link nav__link nav__menu-link_active-all"
+              href="#about-me"
+              >Acerca De Mi</a
+            >
           </li>
           <li class="nav__menu-item">
-            <a class="nav__menu-link nav__link" href="#about-me">Educación</a>
+            <a
+              class="nav__menu-link nav__link nav__menu-link_active-all"
+              href="#about-me"
+              >Educación</a
+            >
           </li>
           <li class="nav__menu-item">
-            <a class="nav__menu-link nav__link" href="#skills">Habilidades</a>
+            <a
+              class="nav__menu-link nav__link nav__menu-link_active-all"
+              href="#skills"
+              >Habilidades</a
+            >
           </li>
           <li class="nav__menu-item">
-            <a class="nav__menu-link nav__link" href="#skills">Cursos</a>
+            <a
+              class="nav__menu-link nav__link nav__menu-link_active-all"
+              href="#skills"
+              >Cursos</a
+            >
           </li>
           <li class="nav__menu-item">
-            <a class="nav__menu-link nav__link" href="#projects">Proyectos</a>
+            <a
+              class="nav__menu-link nav__link nav__menu-link_active-all"
+              href="#projects"
+              >Proyectos</a
+            >
           </li>
           <li class="nav__menu-item">
-            <a class="nav__menu-link nav__link nav__menu-link_active" href="#contact">Contacto</a>
+            <a
+              class="nav__menu-link nav__link nav__menu-link_active"
+              href="#contact"
+              >Contacto</a
+            >
           </li>
-        </ul>          
+        </ul>
       </nav>
     </header>
     <!-- HEADER NAV END -->
 
     <!-- HOME SECTION -->
     <section id="home" class="home">
-        <!-- Background animation -->
+      <!-- Background animation -->
       <iframe
         class="background__header-decoration"
         src="/animations/animation-sections.html"
-        >
+      >
       </iframe>
       <iframe
-          class="background__home-decoration"
-          src="/animations/animation-home-footer.html"
-          ></iframe>
-        <div class="container__left">
-          <div class="content__left-home">
+        class="background__home-decoration"
+        src="/animations/animation-home-footer.html"
+      ></iframe>
+      <div class="container__left">
+        <div class="content__left-home">
+          <div class="container__titles">
             <h2 class="welcome__title" id="bounceInDown">Bienvenidos a mi</h2>
-            <h2 class="welcome__subtitle" id="bounceInRight">Curriculum Vitae</h2>
+            <h2 class="welcome__subtitle" id="bounceInRight">
+              Curriculum Vitae
+            </h2>
             <h1 class="title__home-name" id="bounceInLeft">
               Soy <span>Kevin Bolaños</span>
             </h1>
             <h3 class="title__home-dev">
               <span>Desarrollador Full-Stack MERN</span>
             </h3>
-            <div class="container__p-home">
-              <p>
-                Nuestra vida constantemente se encuentra en una inevitable montaña rusa llena de emociones y adversidades, y dependera de cada uno de nosotros superarlas, con tranquilidad y paciencia, te puedo asegurar que cuando lo logremos, tendremos una paz mental que nos convertira más fuertes e imparables.
-              </p>
-            </div>
           </div>
+          <div class="container__p-home">
+            <p>
+              Nuestra vida constantemente se encuentra en una inevitable montaña
+              rusa llena de emociones y adversidades, y dependera de cada uno de
+              nosotros superarlas, con tranquilidad y paciencia, te puedo
+              asegurar que cuando lo logremos, tendremos una paz mental que nos
+              convertira más fuertes e imparables.
+            </p>
+          </div>
+        </div>
       </div>
       <div class="container__right">
         <!-- PROFILE -->
         <div class="container__position-profile">
           <div class="container__image-profile">
             <img src="/img/Img-me.jpeg" alt="photo-profile" />
-          </div>   
+          </div>
         </div>
       </div>
     </section>
@@ -109,13 +140,13 @@
           <div class="container__p-about">
             <p>
               Un entusiasta desarrollador web en proceso de formación constante,
-              especializado en la creación y de desarrollo Full Stack de sitios y
-              aplicaciones web, empleando mis habilidades en HTML, CSS, JavaScript
-              y también usando el framework React, para la parte del backend tengo
-              conocimientos desarrollando servidores, diseñando rutas e
-              implementando autenticaciones de registro y el inicio de sesiones
-              encriptando contraseñas para la seguridad de la información de los
-              usuarios rutas.
+              especializado en la creación y de desarrollo Full Stack de sitios
+              y aplicaciones web, empleando mis habilidades en HTML, CSS,
+              JavaScript y también usando el framework React, para la parte del
+              backend tengo conocimientos desarrollando servidores, diseñando
+              rutas e implementando autenticaciones de registro y el inicio de
+              sesiones encriptando contraseñas para la seguridad de la
+              información de los usuarios rutas.
             </p>
             <p>
               Mi enfoque autodidacta y paciencia para la resolución de problemas
@@ -151,7 +182,10 @@
                 </div>
                 <div class="shakeX">
                   <i class="uil uil-file-bookmark-alt"></i>
-                  <a href="https://learn.ada-school.org/certifications/65451dc4831c9788c54e7f3e">Certificado</a>
+                  <a
+                    href="https://learn.ada-school.org/certifications/65451dc4831c9788c54e7f3e"
+                    >Certificado</a
+                  >
                 </div>
               </li>
               <li>
@@ -185,129 +219,130 @@
       <section class="container__left-skills">
         <article class="content__left-skills">
           <h2 id="lightSpeedInLeft" class="title__skill">Habilidades</h2>
-        <span class="subtitle__skill">Nivel Técnico</span>
+          <span class="subtitle__skill">Nivel Técnico</span>
 
-        <!-- CONTAINER SKILLS -->
-        <section class="container__skills-bar">
-          <!-- SKILLS FRONTEND -->
-          <div class="skills__content_dev skills__open">
-          <div class="skills__header">
-              <!-- ICON -->
-              <i class="uil uil-brackets-curly skills__icon"></i>
-              <div>
-                <h1 class="title__skills-bar">Desarrollador frontend</h1>
-                <span class="subtitle__skills-bar">1 año de experiencia</span>
-              </div>
-              <!-- ICON -->
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-
-            <div class="skills__list">
-              <!-- HTML -->
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">HTML</h3>
-                  <span class="skills__number">90%</span>
+          <!-- CONTAINER SKILLS -->
+          <section class="container__skills-bar">
+            <!-- SKILLS FRONTEND -->
+            <div class="skills__content_dev skills__open">
+              <div class="skills__header">
+                <!-- ICON -->
+                <i class="uil uil-brackets-curly skills__icon"></i>
+                <div>
+                  <h1 class="title__skills-bar">Desarrollador frontend</h1>
+                  <span class="subtitle__skills-bar">1 año de experiencia</span>
                 </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__html"></span>
-                </div>
+                <!-- ICON -->
+                <i class="uil uil-angle-down skills__arrow"></i>
               </div>
 
-              <!-- CSS -->
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">CSS</h3>
-                  <span class="skills__number">50%</span>
+              <div class="skills__list">
+                <!-- HTML -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__html"></span>
+                  </div>
                 </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__css"></span>
-                </div>
-              </div>
 
-              <!-- JAVASCRIPT -->
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Javascript</h3>
-                  <span class="skills__number">30%</span>
+                <!-- CSS -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__number">50%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__css"></span>
+                  </div>
                 </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__js"></span>
-                </div>
-              </div>
 
-              <!-- REACT -->
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">React</h3>
-                  <span class="skills__number">30%</span>
+                <!-- JAVASCRIPT -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Javascript</h3>
+                    <span class="skills__number">30%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__js"></span>
+                  </div>
                 </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__react"></span>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- SKILLS BACKEND -->
-          <div class="skills__content_dev skills__close">
-            <div class="skills__header">
-              <!-- ICON -->
-              <i class="uil uil-server-network skills__icon"></i>
-
-              <div>
-                <h1 class="title__skills-bar">Desarrollador backend</h1>
-                <span class="subtitle__skills-bar">1 año de experiencia</span>
-              </div>
-              <!-- ICON -->
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-
-            <div class="skills__list">
-              <!-- NODEJS -->
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Node JS</h3>
-                  <span class="skills__number">40%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__node"></span>
-                </div>
-              </div>
-
-              <!-- EXPRESS -->
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Express</h3>
-                  <span class="skills__number">50%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__express"></span>
-                </div>
-              </div>
-
-              <!-- MONGODB -->
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Mongo DB</h3>
-                  <span class="skills__number">50%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__mongodb"></span>
+                <!-- REACT -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__number">30%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__react"></span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+
+            <!-- SKILLS BACKEND -->
+            <div class="skills__content_dev skills__close">
+              <div class="skills__header">
+                <!-- ICON -->
+                <i class="uil uil-server-network skills__icon"></i>
+
+                <div>
+                  <h1 class="title__skills-bar">Desarrollador backend</h1>
+                  <span class="subtitle__skills-bar">1 año de experiencia</span>
+                </div>
+                <!-- ICON -->
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list">
+                <!-- NODEJS -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Node JS</h3>
+                    <span class="skills__number">40%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__node"></span>
+                  </div>
+                </div>
+
+                <!-- EXPRESS -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Express</h3>
+                    <span class="skills__number">50%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__express"></span>
+                  </div>
+                </div>
+
+                <!-- MONGODB -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Mongo DB</h3>
+                    <span class="skills__number">50%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__mongodb"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- CONTAINER SKILLS END -->
         </article>
-        <!-- CONTAINER SKILLS END -->
-        </section>
+      </section>
       <!-- SKILLS SECTION END -->
 
       <!-- OTHER COURSES SECTION -->
       <section class="container__right-courses">
         <article class="content__right-courses">
-            <h1 id="lightSpeedInRight">Cursos adicionales</h1>
-            <div class="container__certificated-courses">
+          <h1 id="lightSpeedInRight">Cursos adicionales</h1>
+          <div class="container__certificated-courses">
             <ul>
               <li>
                 <h4>
@@ -433,8 +468,8 @@
       <section class="container__left-projects">
         <!-- Content left -->
         <article class="content__left-projects">
-            <h1 id="fadeInTopLeft">Proyectos</h1>
-            <div class="container__container-left_projects">
+          <h1 id="fadeInTopLeft">Proyectos</h1>
+          <div class="container__container-left_projects">
             <h2>Proyectos que he realizado en el bootcamp</h2>
             <ul>
               <li>
@@ -471,7 +506,9 @@
                 </p>
               </li>
               <li>
-                <h3 class="subtitle__name-projects">Hoja de vida con HTML y CSS</h3>
+                <h3 class="subtitle__name-projects">
+                  Hoja de vida con HTML y CSS
+                </h3>
                 <div class="position__projects-date">
                   <h4 class="subtitle__date-projects">Abril - 2023</h4>
                   <h4 class="subtitle__date-projects">Bootcamp Ada School</h4>
@@ -491,52 +528,55 @@
       <section class="container__right-projects">
         <article class="content__right-projects">
           <div class="container__container-right_projects">
-          <ul>
-            <li>
-              <h3 class="subtitle__name-projects">Aplicación Notes con Bootstrap</h3>
-              <div class="position__projects-date">
-                <h4 class="subtitle__date-projects">Octubre - 2023</h4>
-                <h4 class="subtitle__date-projects">Bootcamp Ada School</h4>
-              </div>
-              <p class="paragraph__projects">
-                Desarrollé un servidor con Node, cree un modelo de datos para
-                MongoDB, conecte el servidor a la base, diseñe diferentes rutas
-                con el método CRUD para agregar, editar, eliminar las notas y
-                para el front-end use handlebars un motor de plantillas de HTML.
-              </p>
-            </li>
-            <li>
-              <h3 class="subtitle__name-projects">
-                Crear servidor en Node y Express
-              </h3>
-              <div class="position__projects-date">
-                <h4 class="subtitle__date-projects">Agosto - 2023</h4>
-                <h4 class="subtitle__date-projects">Bootcamp Ada School</h4>
-              </div>
-              <p class="paragraph__projects">
-                Desarrollé servidores con Node y Express, conocimiento en la
-                implementación de bibliotecas con Node como; jsonwebtoken,
-                nodemon, cors, cookie-parser, bcryptjs, moongose, morgan, zod.
-              </p>
-            </li>
-            <li>
-              <h3 class="subtitle__name-projects">
-                Lista de tareas en consola con Node
-              </h3>
-              <div class="position__projects-date">
-                <h4 class="subtitle__date-projects">Julio - 2023</h4>
-                <h4 class="subtitle__date-projects">Bootcamp Ada School</h4>
-              </div>
-              <p class="paragraph__projects">
-                Desarrollé una lista de tareas, utilizando node, un proyecto
-                pequeño en el backend creando una interfaz de consola para tener
-                un menú interactivo y usar las funcionalidades básicas de
-                agregar, listar, modificar, cambiar de estado y eliminar tareas
-                usando la terminal.
-              </p>
-            </li>
-          </ul>
-        </div>
+            <ul>
+              <li>
+                <h3 class="subtitle__name-projects">
+                  Aplicación Notes con Bootstrap
+                </h3>
+                <div class="position__projects-date">
+                  <h4 class="subtitle__date-projects">Octubre - 2023</h4>
+                  <h4 class="subtitle__date-projects">Bootcamp Ada School</h4>
+                </div>
+                <p class="paragraph__projects">
+                  Desarrollé un servidor con Node, cree un modelo de datos para
+                  MongoDB, conecte el servidor a la base, diseñe diferentes
+                  rutas con el método CRUD para agregar, editar, eliminar las
+                  notas y para el front-end use handlebars un motor de
+                  plantillas de HTML.
+                </p>
+              </li>
+              <li>
+                <h3 class="subtitle__name-projects">
+                  Crear servidor en Node y Express
+                </h3>
+                <div class="position__projects-date">
+                  <h4 class="subtitle__date-projects">Agosto - 2023</h4>
+                  <h4 class="subtitle__date-projects">Bootcamp Ada School</h4>
+                </div>
+                <p class="paragraph__projects">
+                  Desarrollé servidores con Node y Express, conocimiento en la
+                  implementación de bibliotecas con Node como; jsonwebtoken,
+                  nodemon, cors, cookie-parser, bcryptjs, moongose, morgan, zod.
+                </p>
+              </li>
+              <li>
+                <h3 class="subtitle__name-projects">
+                  Lista de tareas en consola con Node
+                </h3>
+                <div class="position__projects-date">
+                  <h4 class="subtitle__date-projects">Julio - 2023</h4>
+                  <h4 class="subtitle__date-projects">Bootcamp Ada School</h4>
+                </div>
+                <p class="paragraph__projects">
+                  Desarrollé una lista de tareas, utilizando node, un proyecto
+                  pequeño en el backend creando una interfaz de consola para
+                  tener un menú interactivo y usar las funcionalidades básicas
+                  de agregar, listar, modificar, cambiar de estado y eliminar
+                  tareas usando la terminal.
+                </p>
+              </li>
+            </ul>
+          </div>
         </article>
       </section>
     </section>
@@ -619,33 +659,47 @@
       <div class="container__background-footer">
         <section class="footer__copy-container">
           <div class="footer__content">
-          <h3 class="subtitle__footer-name">Kevin Andrés Bolaños Narvaéz</h3>
-          <ul class="footer__social">
-            <li class="heartBeat link__items">
-              <a class="link__names link__color link__names-active" href="https://www.linkedin.com/in/kevin-bolanos-dev/">LinkedIn<i class="footer__icons uil uil-linkedin"></i>
-              </a>
-            </li>
-            <li class="heartBeat link__items">
-              <a class="link__names link__color link__names-active" href="https://github.com/KevinBolanosDev">GitHub<i class="footer__icons uil uil-github"></i>
-              </a>
-            </li>
-            <li class="heartBeat link__items">
-              <a class="link__names link__color link__names-active" href="https://wa.link/e1hypd" >WhatsApp<i class="footer__icons uil uil-whatsapp-alt heartBeat"></i>
-              </a>
-            </li>
-            <li class="heartBeat link__items">
-              <a class="link__names link__color link__names-active"
-                href="mailto:im.kevinbolanos.dev@gmail.com?subject=Dejá el asunto aquí...&body=Dejá tú mensaje..."
-                >Gmail<i class="footer__icons uil uil-envelopes"></i>
-              </a>
-            </li>
-          </ul>
-          <h3 class="subtitle__footer-copy">Derechos reservados &copy; 2023</h3>
-        </div>
+            <h3 class="subtitle__footer-name">Kevin Andrés Bolaños Narvaéz</h3>
+            <ul class="footer__social">
+              <li class="heartBeat link__items">
+                <a
+                  class="link__names link__color link__names-active"
+                  href="https://www.linkedin.com/in/kevin-bolanos-dev/"
+                  >LinkedIn<i class="footer__icons uil uil-linkedin"></i>
+                </a>
+              </li>
+              <li class="heartBeat link__items">
+                <a
+                  class="link__names link__color link__names-active"
+                  href="https://github.com/KevinBolanosDev"
+                  >GitHub<i class="footer__icons uil uil-github"></i>
+                </a>
+              </li>
+              <li class="heartBeat link__items">
+                <a
+                  class="link__names link__color link__names-active"
+                  href="https://wa.link/e1hypd"
+                  >WhatsApp<i
+                    class="footer__icons uil uil-whatsapp-alt heartBeat"
+                  ></i>
+                </a>
+              </li>
+              <li class="heartBeat link__items">
+                <a
+                  class="link__names link__color link__names-active"
+                  href="mailto:im.kevinbolanos.dev@gmail.com?subject=Dejá el asunto aquí...&body=Dejá tú mensaje..."
+                  >Gmail<i class="footer__icons uil uil-envelopes"></i>
+                </a>
+              </li>
+            </ul>
+            <h3 class="subtitle__footer-copy">
+              Derechos reservados &copy; 2023
+            </h3>
+          </div>
         </section>
       </div>
     </footer>
     <!-- FOOTER END -->
-    <!-- <script src="/scripts/script.js"></script> -->
+    <script src="/scripts/script.js"></script>
   </body>
 </html>

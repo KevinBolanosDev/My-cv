@@ -169,7 +169,7 @@ body {
 .title__home-name {
   font-size: 3em;
   color: var(--title-color);
-  padding-left: 30px;
+  margin-left: 30px;
 }
 
 .title__home-name > span {
@@ -204,7 +204,7 @@ body {
 
 .title__home-dev {
   font-size: 2.2em;
-  margin-left: 35px;
+  margin-left: 40px;
   color: var(--title-color);
   background-clip: text;
   white-space: nowrap;
@@ -233,7 +233,7 @@ body {
   align-self: center;
 }
 
-.content__left-home p {
+.container__p-home p {
   font-size: 1.2rem;
   line-height: 1.6em;
   font-weight: var(--font-semi-bold);
@@ -797,10 +797,6 @@ html {
   margin-left: 100px;
 }
 
-.title__footer {
-  text-align: center;
-}
-
 /* style animation title */
 
 .title__name-footer {
@@ -858,26 +854,6 @@ html {
     background: #80888dd2;
     background-clip: text;
   }
-}
-
-.nav__link-footer {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: max-content;
-  list-style: none;
-  margin-top: 20px;
-}
-
-.nav__link-footer a {
-  text-decoration: none;
-  padding-left: 20px;
-  font-size: 1.3em;
-  font-weight: 610;
-  color: var(--title-color-all);
-}
-
-.nav__link-footer a:hover {
-  color: var(--title-hover);
 }
 
 .footer__form {
@@ -1049,7 +1025,7 @@ html {
 }
 
 .footer__icons {
-  font-size: 1.4em;
+  font-size: 1.5em;
   color: var(--title-color);
   padding-right: 10px;
 }
@@ -1060,140 +1036,82 @@ html {
 
 /* RESPONSIVE QUERIES */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 1153px) and (max-device-width: 1280px) {
+  
   /* NAVBAR HEADER */
 
-  .header {
-    min-width: 768px;
-    height: 35px;
-    /* padding: 15px 15px; */
-  }
-
-  /* Header decoration */
-  .background__header-decoration {
-    width: 100%;
-    height: 40px;
-  }
-
   .mylogo {
-    font-size: 1.5rem;
-    margin-left: 0px;
+    font-size: 1.6rem;
   }
 
-  .navbar a {
-    font-size: 0.9em;
-    margin-left: 4px;
+  .nav__menu-item {
+    font-size: 1.1rem;
   }
 
   /* HOME */
 
-  .home {
-    width: 100%;
-    height: 75vh;
-  }
-
-  .content__left-home {
-    padding-top: 3em;
-  }
-
   /* style animation title left */
   .welcome__title {
-    font-size: 2rem;
+    font-size: 2.4rem;
+    padding-left: 80px;
   }
 
   .welcome__subtitle {
-    font-size: 2rem;
-    padding-left: 70px;
-    margin-bottom: 0.4em;
+    font-size: 2.4rem;
+    padding-left: 180px;
   }
 
   .title__home-name {
-    font-size: 1.7em;
+    font-size: 2.6em;
+    margin-left: 40px;
   }
 
   .title__home-name > span {
-    font: 800 0.8em/1.7;
+    font: 800 1em/1.7;
   }
 
   .title__home-dev {
-    font-size: 1.3em;
+    font-size: 1.9em;
+    margin-left: 50px;
   }
 
-  .content__left-home p {
-    font-size: 1rem;
+  .container__p-home {
+    max-width: 500px;
+    margin-top: 30px;
   }
 
-  .container__left {
-    width: 100%;
+  .container__p-home p {
+    font-size: 1.1rem;
   }
+
   /* Image profile and background decoration */
   .container__image-profile {
-    max-width: 320px;
-    width: 100%;
-    max-height: 320px;
+    max-width: 400px;
+    max-height: 400px;
   }
 
   /* ABOUT ME AND EDUCATION */
 
-  .about-me__education {
-    height: 100vh;
-  }
-
-  /* Background content decoration */
-  .background__header-about {
-    height: 40px;
-  }
-
-  /* Content left */
-
-  .content__left-about {
-    padding-top: 1em;
-  }
-
   /* title and paragraph */
   .content__left-about h1 {
-    font-size: 1.8em;
-    padding-bottom: 0.7em;
+    font-size: 2.3rem;
+    margin-bottom: 30px;
   }
 
-  .content__left-about p {
-    font-size: 0.9em;
-    line-height: 1.4em;
-    max-width: 350px;
-    margin-bottom: 1.2em;
+  .container__p-about {
+    max-width: 500px;
   }
 
   /* EDUCATION SECTION */
 
-  .content__right-education {
-    padding-top: 1em;
-  }
-
   /* titles and paragraph */
   .content__right-education h1 {
-    font-size: 1.8em;
-    padding-bottom: 0.6em;
+    font-size: 2.3rem;
   }
 
   .content__right-education h3 {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-    text-align: start;
-  }
-
-  .content__right-education li > h4 {
-    font-size: 1.1em;
-    padding-bottom: 0.4em;
-  }
-
-  .position__right-education {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 0.2em;
-  }
-
-  .position__right-education p {
-    font-size: 0.9em;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
   }
 
   /* SKILLS AND OTHER COURSES */
@@ -1202,194 +1120,286 @@ html {
     height: 110vh;
   }
 
-  /* Background decoration */
-  .background__skills-header {
-    height: 40px;
-  }
-
-  .container__left-skills {
-    width: 90%;
-  }
-
   /* titles skills */
   .title__skill {
-    font-size: 1.8em;
-    margin-top: 50px;
+    font-size: 2.3rem;
   }
 
   .subtitle__skill {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 
   .title__skills-bar {
-    font-size: 1.3em;
-  }
-
-  .subtitle__skills-bar {
-    font-size: 1em;
+    font-size: 1.3rem;
   }
 
   .container__skills-bar {
-    width: 20em;
-    margin-bottom: 2em;
+    width: 380px;
   }
 
   .skills__header {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
   }
 
+  /* Icons */
   .skills__icon,
   .skills__arrow {
-    font-size: 2.3em;
-  }
-
-  .skills__icon {
-    margin-right: 0.4rem;
-  }
-
-  /* Experience percentage */
-  .skills__name {
-    font-size: 0.9em;
-  }
-
-  .skills__number {
-    font-size: 0.9em;
-  }
-
-  .skills__bar,
-  .skills__percentage {
-    height: 9px;
-  }
+    font-size: 2.5em;
+}
 
   /* OTHER COURSES */
 
-  .content__right-courses {
-    padding-top: 50px;
-    margin-left: -40px;
-    padding-right: 10px;
-    margin-right: 30px;
+  .content__right-courses h1 {
+    font-size: 2.3rem;
   }
 
-  .content__right-courses h1 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
+  .container__certificated-courses {
+    max-width: 580px;
   }
 
   .content__right-courses h4 {
-    font-size: 1em;
-    margin-bottom: 0.1em;
-  }
-
-  .position-courses {
-    font-size: 0.9em;
-    margin-top: 0.4em;
-    padding-bottom: 0.4em;
-  }
-
-  /* Certificate */
-  .shakeX a {
-    font-size: 0.9em;
-  }
-
-  .shakeX i {
-    font-size: 1.4em;
-    color: var(--color-icon);
+    font-size: 1.1rem;
   }
 
   /* PROJECTS EXPERIENCE */
   .projects {
-    height: 130vh;
+    height: 110vh;
   }
 
-  /* Background decoration */
-  .background__header-projects {
-    height: 40px;
+  .container__container-left_projects,
+  .container__container-right_projects {
+    max-width: 540px;
   }
 
-  .content__left-projects {
-    padding-top: 50px;
-  }
-
-  .position__projects-date {
-    flex-direction: column;
-  }
-
+  /* Titles and paragraph */
   .content__left-projects h1 {
-    font-size: 1.8em;
-    padding-bottom: 15px;
+    font-size: 2.3rem;
   }
 
   .content__left-projects h2 {
-    font-size: 1.1em;
-    padding-bottom: 15px;
+    font-size: 1.5rem;
   }
 
   .subtitle__name-projects {
-    font-size: 1em;
-    margin-bottom: 5px;
+    font-size: 1.3rem;
   }
 
   .subtitle__date-projects {
     font-size: 1em;
-    padding-left: 0;
-    padding-bottom: 0;
+  }
+  
+  /* FOOTER */
+  .title__footer {
+    font: 800 3.3em/1 "Neuto", sans-serif;
   }
 
-  .paragraph__projects {
-    font-size: 0.9em;
-    line-height: 1.4em;
-    padding-top: 3px;
-    padding-bottom: 15px;
+  .footer__form h2 {
+    font-size: 1.9em;
+  }
+
+  .footer__input {
+    height: 30px;
+    width: 380px;
+  }
+
+  .footer__input-message {
+    height: 70px;
+    width: 380px;
+    margin-top: 8px;
+  }
+
+  .subtitle__footer-name {
+    font-size: 1.4rem;
+  }
+
+  .subtitle__footer-copy {
+    font-size: 1.4rem;
+  }
+
+  .link__items {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1152px) {
+  
+  /* NAVBAR HEADER */
+  .header{
+    height: 45px;
+  }
+
+  .background__header-decoration {
+    height: 45px;
+  }
+
+  .mylogo {
+    font-size: 1.4rem;
+  }
+
+  .nav__menu-item {
+    font-size: 0.9rem;
+  }
+
+  /* HOME */
+
+  .welcome__title {
+    font-size: 2.2rem;
+    padding-left: 50px;
+  }
+
+  .welcome__subtitle {
+    font-size: 2.2rem;
+    padding-left: 150px;
+  }
+
+  .title__home-name {
+    font-size: 2.2em;
+    margin-left: 50px;
+  }
+
+  .title__home-name > span {
+    font: 800 0.9em/1.7;
+  }
+
+  .title__home-dev {
+    font-size: 1.5em;
+    margin-left: 65px;
+  }
+
+  .container__p-home {
+    max-width: 380px;
+    margin-top: 20px;
+  }
+
+  /* Image profile and background decoration */
+  .container__image-profile {
+    max-width: 370px;
+    max-height: 370px;
+  }
+
+  /* ABOUT ME AND EDUCATION */
+
+/* Background content decoration */
+  .background__header-about {
+    height: 45px;
+  }
+
+  .content__left-about h1 {
+    font-size: 2.1rem;
+    margin-bottom: 25px;
+  }
+
+  .container__p-about {
+    max-width: 450px;
+  }
+
+  /* EDUCATION SECTION */
+
+  /* titles and paragraph */
+  .content__right-education h1 {
+    font-size: 2.1rem;
+  }
+
+  .content__right-education h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .container__p-education {
+    max-width: 450px;
+    align-self: center;
+  }
+
+  /* SKILLS AND OTHER COURSES */
+
+/* Background decoration */
+  .background__skills-header{
+    height: 45px;
+  }
+  
+  .skills__other-courses {
+    height: 120vh;
+  }
+
+  /* titles skills */
+  .title__skill {
+    font-size: 2.1rem;
+  }
+
+  .subtitle__skill {
+    font-size: 1.1rem;
+  }
+
+  .title__skills-bar {
+    font-size: 1.2rem;
+  }
+
+  .container__skills-bar {
+    width: 350px;
+  }
+
+  /* Icons */
+  .skills__icon,
+  .skills__arrow {
+    font-size: 2.3em;
+}
+
+  /* OTHER COURSES */
+
+  .content__right-courses h1 {
+    font-size: 2.1rem;
+  }
+
+  .container__certificated-courses {
+    max-width: 470px;
+    margin-right: 30px;
+  }
+
+  /* PROJECTS EXPERIENCE */
+  .projects {
+    height: 120vh;
+  }
+
+/* Background decoration */
+.background__header-projects {
+  height: 45px;
+}
+
+  .content__right-projects {
+    margin-top: 180px;
+  }
+
+  .container__container-left_projects,
+  .container__container-right_projects {
+    max-width: 470px;
+  }
+
+  /* Titles and paragraph */
+  .content__left-projects h1 {
+    font-size: 2.1rem;
+  }
+
+  .content__left-projects h2 {
+    font-size: 1.3rem;
+  }
+
+  .subtitle__name-projects {
+    font-size: 1.2rem;
   }
 
   /* FOOTER */
 
-  .content__footer {
-    height: 87vh;
-  }
-
-  .title__footer-container {
-    height: 100%;
-    width: 100%;
-    padding-bottom: 0px;
-    margin-left: 0px;
-  }
-
-  /* style animation title */
   .title__name-footer {
-    font-size: 1.8em;
-    margin-top: 0;
-    margin-bottom: 50px;
-    padding-left: 30px;
+    font-size: 2.5em;
   }
 
   .title__footer {
-    font: 800 2em/1 "Neuto", sans-serif;
-    letter-spacing: 0.3em;
-    padding: 15px;
-    padding-left: 60px;
-    margin: 0;
-  }
-
-  .nav__link-footer {
-    margin-top: 25px;
-  }
-
-  .nav__link-footer a {
-    padding-left: 15px;
-    font-size: 1em;
-  }
-
-  .footer__form {
-    margin-top: 0px;
-    width: 100%;
-    height: 100%;
+    font: 800 2.7em/1 "Neuto", sans-serif;
   }
 
   .footer__form h2 {
-    font-size: 1.5em;
-    margin-top: 50px;
-    margin-bottom: 15px;
+    font-size: 1.7em;
   }
 
   .style__label {
@@ -1397,34 +1407,298 @@ html {
   }
 
   .footer__input {
-    width: 300px;
-    font-size: 1rem;
+    height: 30px;
+    width: 330px;
+    font-size: 0.9rem;
   }
 
   .footer__input-message {
-    height: 70px;
-    width: 300px;
-    font-size: 1rem;
+    height: 60px;
+    width: 330px;
+    margin-top: 8px;
+    font-size: 0.9rem;
   }
 
   .footer__button {
-    height: 35px;
-    width: 100%;
+    height: 30px;
+    width: 150px;
+  }
+
+  .subtitle__footer-name {
+    font-size: 1.2rem;
+  }
+
+  .subtitle__footer-copy {
+    font-size: 1.2rem;
+  }
+
+  .link__items {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-device-width: 855px) and (max-device-width: 1024px) {
+  
+  /* NAVBAR HEADER */
+  .header {
+    height: 40px;
+  }
+
+  /* Header decoration */
+  .background__header-decoration {
+    height: 40px;
+  }
+  
+  .mylogo {
+    font-size: 1.2rem;
+    margin-left: 0px;
+  }
+
+  .nav__menu-item{
+    font-size: 0.7rem;
+  }
+
+  /* HOME */
+
+  .home {
+    height: 90vh;
+  }
+
+  .content__left-home {
+    padding-top: 60px;
+  }
+
+  .content__left-home {
+    padding-top: 3.5em;
+  }
+
+  /* style animation title left */
+  .welcome__title {
+    font-size: 1.7rem;
+    padding-left: 30px;
+  }
+
+  .welcome__subtitle {
+    font-size: 1.7rem;
+    padding-left: 100px;
+    margin-bottom: 0.4em;
+  }
+
+  .title__home-name {
+    font-size: 1.8em;
+    margin-left: 20px;
+  }
+
+  .title__home-name {
+    font: 800 0.6em/1.4;
+  }
+
+  .title__home-dev {
+    font-size: 1.3em;
+    margin-left: 30px;
+  }
+
+  .container__p-home {
+    max-width: 360px;
+    margin-top: 17px;
+  }
+
+  /* ABOUT ME AND EDUCATION */
+  .about-me__education {
+    height: 120vh;
+  }
+
+    /* Image profile and background decoration */
+    .container__image-profile {
+      max-width: 330px;
+      max-height: 330px;
+    }
+
+  /* Background content decoration */
+  .background__header-about {
+    height: 40px;
+  }
+
+  .content__left-about h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .container__p-about {
+    max-width: 380px;
+  }
+
+  /* EDUCATION SECTION */
+
+  /* titles and paragraph */
+  .content__right-education h1 {
+    font-size: 1.8rem;
+  }
+
+  .content__right-education h3 {
+    font-size: 1.1rem;
+    margin-top: 15px;
+  }
+
+  .content__right-education li > h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+
+  .container__p-education {
+    max-width: 380px;
+  }
+
+  .position__right-education {
+    flex-direction: column;
+  }
+
+  .position__right-education p {
+    margin-bottom: 5px;
+  }
+
+  /* SKILLS AND OTHER COURSES */
+  
+  .background__skills-header{
+    height: 40px;
+  }
+  
+  .skills__other-courses {
+    height: 120vh;
+  }
+
+  /* titles skills */
+  .title__skill {
+    font-size: 1.8rem;
+  }
+
+  .title__skills-bar {
+    font-size: 1.1rem;
+  }
+
+  .subtitle__skills-bar {
     font-size: 1rem;
   }
 
-  .footer__copy-container {
-    margin-top: 35px;
+
+  .container__skills-bar {
+    width: 330px;
   }
 
-  .subtitle__footer {
+    /* Icons */
+    .skills__icon,
+    .skills__arrow {
+      font-size: 2em;
+  }
+
+  /* OTHER COURSES */
+  .content__right-courses h1 {
+    font-size: 1.8rem;
+  }
+
+  .content__right-courses h4 {
     font-size: 1.1rem;
-    padding-inline: 20px;
   }
 
-  .footer__icons {
-    font-size: 1.8em;
-    padding-inline: 6px;
+  .container__certificated-courses {
+    max-width: 440px;
+    margin-right: 30px;
+  }
+
+  /* PROJECTS EXPERIENCE */
+
+  .projects {
+    height: 130vh;
+  }
+
+  .background__header-projects {
+    height: 40px;
+  }
+
+  .content__right-projects {
+    margin-top: 150px;
+  }
+
+  .container__container-left_projects,
+  .container__container-right_projects {
+    max-width: 380px;
+  }
+
+  /* Titles and paragraph */
+  .content__left-projects h1 {
+    font-size: 1.8rem;
+    margin-top: 50px;
+  }
+
+  .content__left-projects h2 {
+    font-size: 1.1rem;
+  }
+
+  .subtitle__name-projects {
+    font-size: 1.1rem;
+  }
+
+  .subtitle__date-projects {
+    font-size: 1em;
+    margin-top: 3px;
+  }
+
+  /* FOOTER */
+
+  .title__footer-container {
+    margin-left: 20px;
+  }
+
+  .title__name-footer {
+    font-size: 1.7em;
+    margin-left: -15px;
+    margin-top: 80px;
+  }
+
+  .title__footer {
+    font: 800 2em/1 "Neuto", sans-serif;
+    line-height: 40px;
+  }
+
+  .footer__form h2 {
+    font-size: 1.5em;
+  }
+
+  .style__label {
+    font-size: 1.1em;
+  }
+
+  .footer__input {
+    width: 280px;
+    font-size: 0.9rem;
+  }
+
+  .footer__input-message {
+    width: 280px;
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+
+  .footer__button {
+    width: 120px;
+  }
+
+  .subtitle__footer-name {
+    font-size: 1.1rem;
+    margin: 0px 0px 20px 130px;
+  }
+
+  .subtitle__footer-copy {
+    font-size: 1.1rem;
+    margin: 0px 130px 20px 0px;
+  }
+
+  .link__items {
+    font-size: 0.8rem;
+  }
+
+  .link__names-active {
+    height: 40px;
   }
 }
 

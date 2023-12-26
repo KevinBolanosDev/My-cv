@@ -204,9 +204,9 @@ body {
   background-clip: text;
   white-space: nowrap;
   border-right: solid 6px;
-  width: 23ch;
+  width: 24ch;
 
-  animation: typing 3s steps(23), blink 0.5s infinite step-end alternate;
+  animation: typing 3s steps(24), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
 
@@ -1701,11 +1701,13 @@ html {
 
   .header {
     height: 40px;
+    width: 100%;
   }
 
   /* Header decoration */
   .background__header-decoration {
     height: 40px;
+    width: 100%;
   }
 
   .mylogo {
@@ -1761,18 +1763,21 @@ html {
   /* HOME */
 
   .home {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    height: 80vh;
+    /* grid-template-columns: 50%; */
+    grid-template-rows: 60%;
+    height: 40em;
+    /* border: solid; */
   }
 
   .container__left {
     order: 2;
     grid-column: 3/1;
+    height: 15em;
+    /* border: yellow solid; */
   }
 
   .content__left-home {
-    flex-direction: row;
+    /* flex-direction: row; */
     padding: 0px 0px 0px 0px;
     justify-content: center;
   }
@@ -1781,28 +1786,35 @@ html {
   .container__titles {
     position: absolute;
     top: 0;
-    left: 0;
-    margin-left: 40px;
+    
+    /* left: 0; */
+    /* margin-left: 40px; */
     z-index: 2;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 60%;
+     /* border: solid blue; */
   }
 
   .welcome__title {
     font-size: 1.5rem;
-    padding-left: 40px;
-    margin-top: 90px;
+    /* padding-left: 40px; */
+    margin-top: 50px;
+    /* text-align: center; */
+    /* border: solid; */
   }
 
   .welcome__subtitle {
     font-size: 1.5rem;
-    padding-left: 120px;
-    margin-bottom: 10px;
+    padding-left: 160px;
+    /* border: solid; */
   }
 
   .title__home-name {
     font-size: 1.5em;
-    margin-left: 40px;
+    margin-top: 180px;
+    margin-bottom: -10px;
+    text-align: center;
+    /* margin-left: 40px; */
   }
 
   .title__home-name > span {
@@ -1810,13 +1822,17 @@ html {
   }
 
   .title__home-dev {
-    font-size: 1.2em;
-    margin-left: 50px;
+    font-size: 1.1em;
+    /* text-align: center; */
+    margin-left: 125px;
+    padding: 5px;
+    /* border: solid; */
   }
 
   .container__p-home {
-    margin-top: 65px;
-    max-width: 600px;
+    margin-top: 0px;
+    max-width: 450px;
+    /* border: solid; */
   }
 
   .container__p-home p {
@@ -1826,19 +1842,20 @@ html {
 
   /* Image profile and background decoration */
   .container__right {
-    grid-column: 1/3;
+    /* grid-column: 1/3; */
     display: flex;
     justify-content: flex-end;
   }
 
   .container__position-profile {
-    width: 50%;
+    /* width: 50%; */
+    border: solid white;
   }
 
   .container__image-profile {
-    margin-top: 90px;
-    width: 200px;
-    height: 200px;
+    margin-top: 50px;
+    width: 180px;
+    height: 180px;
   }
 
   .background__home-decoration {

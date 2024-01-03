@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Poppins:wght@400;500;600&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -282,9 +286,7 @@ body {
   border: none;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 /* HOME END */
 
 /* ABOUT-ME AND EDUCATION SECTION*/
@@ -780,7 +782,6 @@ html {
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   height: 100%;
-  border: solid blue;
 }
 
 .title__footer-container {
@@ -791,7 +792,6 @@ html {
   height: 100%;
   padding-bottom: 40px;
   margin-left: 100px;
-  border: solid white;
 }
 
 /* style animation title */
@@ -861,7 +861,6 @@ html {
   align-self: center;
   /* grid-area: 1 / 2; */
   margin-top: 100px;
-  border: solid red;
 }
 
 .footer__form h2 {
@@ -1721,7 +1720,7 @@ html {
     background-color: #000000a4;
     font-weight: var(--font-ultra-bold);
     position: fixed;
-    top: 40px;
+    top: 30px;
     width: 100%;
     height: 100%;
     padding: 20px 0;
@@ -2171,6 +2170,490 @@ html {
 
   .link__names-active {
     height: 40px;
+  }
+
+  .footer__icons {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-device-width: 376px) {
+  /* NAVBAR HEADER */
+
+  .header {
+    height: 30px;
+    width: 375px;
+    padding: 10px 10px;
+  }
+
+  /* Header decoration */
+  .background__header-decoration {
+    height: 30px;
+  }
+
+  .mylogo {
+    font-size: 1.1rem;
+    margin-left: 0;
+  }
+
+  .nav__menu {
+    width: 375px;
+    padding-top: 50px;
+  }
+
+  .nav__menu-item {
+    /* text-align: center; */
+    line-height: 40px;
+    width: 200px;
+    border-radius: 30px;
+    border-bottom: solid rgba(201, 201, 201, 0.815);
+    border-left: solid rgba(201, 201, 201, 0.815);
+    border-right: none;
+    background: #464646a8;
+  }
+
+  .nav__menu-link:hover,
+  .nav__menu-link_active,
+  .nav__menu-link_active-all {
+    background: none;
+    color: #1395d1;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__menu-visible {
+    left: 0;
+  }
+
+  .nav__toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* HOME */
+
+  .home {
+    /* grid-template-columns: 50%; */
+    grid-template-rows: 60%;
+    height: 40em;
+    /* border: solid; */
+  }
+
+  .container__left {
+    order: 2;
+    grid-column: 3/1;
+    height: 15em;
+    /* border: yellow solid; */
+  }
+
+  .content__left-home {
+    /* flex-direction: row; */
+    padding: 0px 0px 0px 0px;
+    justify-content: center;
+  }
+
+  /* style animation title left */
+  .container__titles {
+    position: absolute;
+    top: 0;
+    
+    /* left: 0; */
+    /* margin-left: 40px; */
+    z-index: 2;
+    width: 100%;
+    height: 60%;
+     /* border: solid blue; */
+  }
+
+  .welcome__title {
+    font-size: 1.2rem;
+    padding-left: 70px;
+    margin-top: 40px;
+    /* text-align: center; */
+    /* border: solid; */
+  }
+
+  .welcome__subtitle {
+    font-size: 1.2rem;
+    padding-left: 100px;
+    /* border: solid; */
+  }
+
+  .title__home-name {
+    font-size: 1.4em;
+    margin-top: 190px;
+    margin-bottom: -10px;
+    text-align: center;
+    margin-left: -10px;
+    /* border: solid; */
+  }
+
+  .title__home-name > span {
+    font: 800 1em/1.7;
+  }
+
+  .title__home-dev {
+    font-size: 1em;
+    /* text-align: center; */
+    margin-left: 50px;
+    padding: 5px;
+    /* border: solid; */
+  }
+
+  .container__p-home {
+    margin-top: 0px;
+    max-width: 340px;
+    /* border: solid; */
+  }
+
+  .container__p-home p {
+    font-size: 1rem;
+    align-self: flex-start;
+  }
+
+  /* Image profile and background decoration */
+  .container__right {
+    /* grid-column: 1/3; */
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .container__position-profile {
+    /* width: 50%; */
+    border: solid white;
+  }
+
+  .container__image-profile {
+    margin-top: 0px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .background__home-decoration {
+    width: 100%;
+    height: 60%;
+  }
+
+  /* ABOUT ME AND EDUCATION */
+
+  .about-me__education {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 60em;
+  }
+
+  /* Background content decoration */
+  .background__header-about {
+    height: 30px;
+  }
+
+  /* Content left */
+
+  .container__left-about {
+    height: 100%;
+    grid-column: 1/3;
+  }
+
+  /* title and paragraph */
+  .content__left-about h1 {
+    font-size: 1.3em;
+    padding-bottom: 0.7em;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+
+  .container__p-about {
+    max-width: 100%;
+  }
+
+  .content__left-about p {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    max-width: 340px;
+  }
+
+  /* EDUCATION SECTION */
+
+  .container__right-education {
+    height: 100%;
+    grid-column: 1/3;
+  }
+
+  /* titles and paragraph */
+  .content__right-education h1 {
+    font-size: 1.5em;
+    margin-top: 40px;
+  }
+
+  .content__right-education h3 {
+    font-size: 1.2em;
+    margin: 10px 0px 0px 0px;
+    text-align: start;
+  }
+
+  .container__p-education {
+    width: 340px;
+  }
+
+  .container__p-education p {
+    font-size: 1em;
+    margin-bottom: 2px;
+  }
+
+  .content__right-education li > h4 {
+    font-size: 1em;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .position__right-education {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    max-width: 400px;
+  }
+
+  .position__right-education p {
+    font-size: 0.9em;
+  }
+
+  /* SKILLS AND OTHER COURSES */
+
+  .skills__other-courses {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 75em;
+  }
+
+  /* Background decoration */
+  .background__skills-header {
+    height: 30px;
+  }
+
+  .container__left-skills {
+    grid-column: 1/3;
+    order: 2;
+    height: 100%;
+    margin-top: 170px;
+  }
+
+  /* titles skills */
+  .title__skill {
+    font-size: 1.2em;
+  }
+
+  .subtitle__skill {
+    font-size: 1em;
+    margin-top: 0px;
+  }
+
+  .title__skills-bar {
+    font-size: 1.1em;
+  }
+
+  .subtitle__skills-bar {
+    font-size: 1em;
+  }
+
+  .container__skills-bar {
+    margin-bottom: 2em;
+    max-width: 340px;
+  }
+
+  .skills__header {
+    margin-bottom: 1.4rem;
+  }
+
+  .skills__icon,
+  .skills__arrow {
+    font-size: 1.6em;
+  }
+
+  /* Experience percentage */
+  .skills__name {
+    font-size: 0.8em;
+  }
+
+  .skills__number {
+    font-size: 0.8em;
+  }
+
+  .skills__bar,
+  .skills__percentage {
+    height: 8px;
+  }
+
+  /* OTHER COURSES */
+
+  .container__right-courses {
+    grid-column: 1/3;
+    height: 100%;
+  }
+
+  .content__right-courses h1 {
+    font-size: 1.2em;
+    margin-top: 40px;
+  }
+
+  .container__certificated-courses {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .content__right-courses h4 {
+    font-size: 1em;
+  }
+
+  .position-courses {
+    padding-bottom: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Certificate */
+  .shakeX {
+    max-width: 400px;
+  }
+  .shakeX a {
+    font-size: 0.9em;
+  }
+
+  /* PROJECTS EXPERIENCE */
+  .projects {
+    grid-template-columns: 1fr;
+    height: 85em;
+  }
+
+  /* Background decoration */
+  .background__header-projects {
+    height: 30px;
+  }
+
+  .content__right-projects {
+    margin-top: -50px;
+  }
+
+  .container__container-left_projects,
+  .container__container-right_projects {
+    width: 340px;
+    align-self: center;
+  }
+
+  .content__left-projects h1 {
+    font-size: 1.2em;
+    margin-top: 40px;
+  }
+
+  .content__left-projects h2 {
+    font-size: 1.1em;
+    padding-left: 10px;
+  }
+
+  .subtitle__name-projects {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+  }
+
+  .subtitle__date-projects {
+    font-size: 1em;
+    padding-inline: 0;
+  }
+
+  .paragraph__projects {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    padding-top: 3px;
+    padding-bottom: 15px;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    height: 40em;
+  }
+
+  .title__footer-container {
+    grid-column: 1/3;
+    height: 60%;
+    margin-left: 0;
+    padding-bottom: 0px;
+    justify-content: flex-start;
+  }
+
+  /* style animation title */
+  .title__name-footer {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+
+  .title__footer {
+    font: 800 1.7em/1 "Neuto", sans-serif;
+    letter-spacing: 0.3em;
+  }
+
+  .footer__form {
+    grid-column: -3 / -1;
+    height: 100%;
+    margin-top: -100px;
+  }
+
+  .footer__form h2 {
+    font-size: 1.2em;
+  }
+
+  .style__label {
+    font-size: 1.1em;
+  }
+
+  .footer__input {
+    height: 30px;
+    width: 300px;
+  }
+
+  .footer__input-message {
+    height: 60px;
+    width: 300px;
+  }
+
+  .footer__button {
+    height: 30px;
+    width: 300px;
+  }
+
+  /* Footer copyright */
+  .subtitle__footer-name {
+    font-size: 1.1rem;
+    margin: 0px 0px 25px 60px;
+  }
+
+  .subtitle__footer-copy {
+    font-size: 1.1rem;
+    margin: 0px 65px 0px 0px;
+  }
+
+  .footer__social {
+    padding-top: 10px;
+    column-gap: 20px;
+    row-gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .link__names {
+    justify-content: space-between;
+    gap: 0;
+    letter-spacing: 0;
+  }
+
+  .link__items {
+    font-size: 1.1rem;
+  }
+
+  .link__names-active {
+    height: 30px;
+    width: 150px;
   }
 
   .footer__icons {

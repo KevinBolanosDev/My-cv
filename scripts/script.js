@@ -26,17 +26,17 @@ loadSkillBar();
 
 // SKILLS TOGGLE SECTION
 
-const skillsContent = document.getElementsByClassName("skills__content_dev"),
-  skillsHeader = document.querySelectorAll(".skills__header");
+const skillsContent = document.getElementsByClassName("skills__content--dev"),
+  skillsHeader = document.querySelectorAll(".skills__header--bar");
 
 function toggleSkills() {
   let itemClass = this.parentNode.className;
 
   for (i = 0; i < skillsContent.length; i++) {
-    skillsContent[i].className = "skills__content_dev skills__close";
+    skillsContent[i].className = "skills__content--dev skills__close";
   }
-  if (itemClass === "skills__content_dev skills__close") {
-    this.parentNode.className = "skills__content_dev skills__open";
+  if (itemClass === "skills__content--dev skills__close") {
+    this.parentNode.className = "skills__content--dev skills__open";
   }
 }
 
@@ -101,13 +101,13 @@ setInterval(toggleAnimationId, 30000);
 setInterval(toggleAnimationClass, 10000);
 
 // MENU RESPONSIVE
-const navToggle = document.querySelector(".nav__toggle");
-const navMenu = document.querySelector(".nav__menu");
+const navToggle = document.querySelector(".header__nav--toggle");
+const navMenu = document.querySelector(".header__nav--menu");
 
 navToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("nav__menu-visible");
+  navMenu.classList.toggle("header__menu--visible");
 
-  if (navMenu.classList.contains("nav__menu-visible")) {
+  if (navMenu.classList.contains("header__menu--visible")) {
     navToggle.setAttribute("aria-label", "Cerrar menú");
   } else {
     navToggle.setAttribute("aria-label", "Abrir menú");

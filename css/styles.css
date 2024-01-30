@@ -771,7 +771,7 @@ ul {
   position: relative;
   height: 100%;
   width: 100%;
-  background: #1d101049;
+  /* background: #1d101049; */
   /* position: relative; */
 }
 .skills__container {
@@ -982,9 +982,10 @@ ul {
   color: var(--title-color);
 }
 .projects__subtitle {
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 1em 0;
   color: var(--title-color);
+  text-align: center;
 }
 .projects__subtitle a {
   color: var(--title-hover);
@@ -992,7 +993,7 @@ ul {
 .projects__bootcamp {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 100%;
   gap: 1rem;
 }
@@ -1027,15 +1028,32 @@ ul {
 .projects__frontend {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
   max-width: 100%;
+  margin-bottom: 2rem;
 }
 .projects__frontend--container {
   border: solid white;
   width: 30em;
   height: 20em;
   position: relative;
+}
+@media (min-width: 768px) {
+  .projects__bootcamp {
+    justify-content: space-evenly;
+  }
+  .projects__frontend {
+    justify-content: space-evenly;
+  }
+  .projects__subtitle {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 1024px) {
+  .projects__subtitle {
+    text-align: start;
+  }
 }
 @media (min-width: 1280px) {
   .projects__bootcamp--container {

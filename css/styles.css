@@ -971,14 +971,14 @@ ul {
 }
 @media (min-width: 1280px) {
   .projects__container {
-    height: 80em;
+    height: 90em;
     width: 75%;
     margin: 5em 4em;
   }
 }
 .projects__title {
   margin: 1rem 0;
-  font-size: 3em;
+  font-size: 3.5em;
   color: var(--title-color);
 }
 .projects__subtitle {
@@ -1001,8 +1001,8 @@ ul {
   width: 30em;
   height: 20em;
   border: solid white;
-  position: relative;
   max-width: 100%;
+  position: relative;
 }
 .bootcamp__chakra {
   background-image: url(../img/hero-chakra-ui.png);
@@ -1010,20 +1010,52 @@ ul {
   background-position: center;
 }
 .bootcamp__task {
-  background-image: url();
+  background-image: url(../img/react-task-list.png);
+  background-size: cover;
+  background-position: center;
+  alt: "photo";
 }
 .bootcamp__calculator {
-  background-image: url();
+  background-image: url(../img/calculator.png);
+  background-size: cover;
+  background-position: center;
+}
+.bootcamp__cv {
+  background-image: url(../img/first-cv.png);
+  background-size: cover;
+  background-position: center;
+  background-position-y: 1em;
 }
 .projects__bootcamp--title,
 .projects__frontend--title {
   font-size: 2em;
-  color: #ffffff;
   background-color: #00000085;
-  padding: 0.5rem 0.5rem;
+  padding: .6rem .6rem;
   width: 100%;
   position: absolute;
   bottom: 0;
+}
+.projects__bootcamp--title a,
+.projects__frontend--title a {
+  color: #FFFFFF;
+}
+.projects__bootcamp--title a:hover,
+.projects__frontend--title a:hover {
+  color: var(--title-hover);
+}
+.projects__bootcamp--github,
+.projects__frontend--github {
+  font-size: 2em;
+  text-align: end;
+  margin: .5rem 1rem 0 0;
+}
+.projects__bootcamp--github a,
+.projects__frontend--github a {
+  color: #FFFFFF;
+}
+.projects__bootcamp--github a:hover,
+.projects__frontend--github a:hover {
+  color: var(--title-hover);
 }
 .projects__frontend {
   display: flex;
@@ -1307,15 +1339,15 @@ fieldset {
     font-size: 1.8em;
   }
   .footer__input {
-    height: 3em;
+    height: 2.5em;
     font-size: 1.7em;
   }
   .footer__textarea--input {
-    font-size: 2.3em;
-    padding: 1.5em 1.5em;
+    font-size: 2.1em;
+    padding: 1.2em 1.2em;
   }
   .footer__button {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 }
 @media (min-width: 1280px) {
@@ -1326,15 +1358,15 @@ fieldset {
     font-size: 2.3em;
   }
   .footer__input {
-    height: 2.5em;
-    font-size: 1.5em;
+    height: 3em;
+    font-size: 1.7em;
   }
   .footer__textarea--input {
-    font-size: 2.1em;
-    padding: 1.2em 1.2em;
+    font-size: 2.3em;
+    padding: 1.5em 1.5em;
   }
   .footer__button {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 }
 
@@ -1389,7 +1421,7 @@ fieldset {
 }
 .footer__names--active {
   background-color: #173b6494;
-  height: 2.5em;
+  height: 2em;
   transition: 1s;
 }
 .footer__color {
@@ -1400,7 +1432,7 @@ fieldset {
   color: #fff;
 }
 .footer__icons {
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: var(--title-color);
   padding-right: 0.5em;
 }
